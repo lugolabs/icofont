@@ -9,9 +9,9 @@
 	Icofont.prototype = {
 		_update: function() {
 			var glyphs = this._glyphList.all();
-			for (var g in glyphs) {
+			$.map(glyphs, function(g) {
 				$('a#' + g).addClass('selected');
-			}
+			});
 		},
 
 		_toggle: function(e, link) {
@@ -23,37 +23,9 @@
 				link.removeClass('selected');
 				this._glyphList.remove(iconName);
 			} else {
-				var glyph = {};
-				glyph[iconName] = this._getContent(link);
 				link.addClass('selected');
-				this._glyphList.add(glyph);
+				this._glyphList.add(iconName);
 			}
-		},
-
-		_getContent: function(link) {
-			var unicode = window
-				.getComputedStyle(link.find('i')[0], ':before')
-				.getPropertyCSSValue('content')
-				.cssText;
-			return this._escapeUnicode(unicode);
-		},
-
-		_escapeUnicode: function(str) {
-	    var result = "";
-	    for(var i = 0; i < str.length; ++i){
-        /* You should probably replace this by an isASCII test */
-        if(str.charCodeAt(i) > 126 || str.charCodeAt(i) < 32)
-          result += '&#x' + this._fixedHex(str.charCodeAt(i), 4) + ';';
-        else
-          result += str[i];
-	    }
-	    return result;
-		},
-
-		_fixedHex: function(number, length){
-	    var str = number.toString(16);
-	    while(str.length < length) str = "0" + str;
-	    return str;
 		},
 
 		_bindAll: function(self) {
@@ -76,10 +48,9 @@
 	Sidebar.prototype = {
 		_refresh: function() {
 			var glyphs = this._glyphList.all(),
-				list = [];
-			for (var g in glyphs) {
-				list.push('<a href="#' + g + '">' + g + '</a> ');
-			}
+				list = $.map(glyphs, function(g) {
+					return '<a href="#' + g + '">' + g + '</a> ';
+				});
 			this.icofontsSelectedContainer.html(list.join(''));
 		},
 
@@ -87,13 +58,16 @@
 				this._log('Updating ...')
 				this._updateBtn.prop('disabled', 'disabled');
 				var glyphs = this._glyphList.all();
-				console.log(glyphs);
-				// this._glyphList.update(glyphs);
+				this._glyphList.update(glyphs);
 		},
 
 		_updated: function(result) {
 			this._updateBtn.prop('disabled', '');
-			this._log();
+			this._log('Updated');
+			var self = this;
+			setTimeout(function() {
+				self._log('');
+			}, 2000);
 		},
 
 		_log: function(msg) {
@@ -120,7 +94,7 @@
 	};
 
 	var GlyphList = function() {
-		this._glyphs = {};
+		this._glyphs = [];
 		this._eventful = $(this);
 	};
 
@@ -144,15 +118,15 @@
 			this._trigger('change');
 		},
 
-		add: function(glyph, unicode) {
-			$.extend(this._glyphs, glyph);
+		add: function(glyph) {
+			this._glyphs.push(glyph);
 			this._trigger('add');
 		},
 
 		remove: function(glyph) {
-			if (this._glyphs[glyph]) {
-				delete this._glyphs[glyph];
-			}
+			var index = $.inArray(glyph, this._glyphs);
+			if (index < 0) return;
+			this._glyphs.splice(index, 1)
 			this._trigger('remove');
 		},
 

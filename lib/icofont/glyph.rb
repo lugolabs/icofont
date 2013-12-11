@@ -8,10 +8,9 @@ module Icofont
 		end
 
 		def self.fetch
-			glyphs = {}
+			glyphs = []
 			File.readlines(Glyph.data_path).each do |line|
-				parts = line.gsub("\n", "").split(',')
-				glyphs[parts[0]] = parts[1]
+				glyphs << line.gsub("\n", "")
 			end
 			glyphs
 		end
