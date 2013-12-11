@@ -1,0 +1,158 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+
+/* layout */
+.icofonts-admin .cf:before, .icofonts-admin .cf:after { content:""; display:table; }
+.icofonts-admin .cf:after { clear:both; }
+.icofonts-admin .cf { zoom:1; }
+
+.icofonts-admin {
+	font-family: Helvetica, sans-serif;
+	font-size: 100%;
+	line-height: 1;
+}
+
+.icofonts-admin * {
+	margin: 0;
+	padding: 0;
+}
+
+.icofonts-admin :focus {
+	outline: none;
+}
+
+.icofonts-admin .main-inner {
+	margin: 1em 2em;
+}
+
+.icofonts-admin .main-left {
+	padding-right: 25em;
+}
+
+.icofonts-admin .icofonts {
+	margin: 2em 0;
+}
+
+.icofonts-admin .icofonts .btn,
+.icofonts-admin .icofonts .btn:link,
+.icofonts-admin .icofonts .btn:visited {
+	display: inline-block;
+	margin: 0 2em 2em 0;
+	padding: .5em;
+	color: #08c;
+	text-align: center;
+	width: 11em;
+	text-decoration: none;
+	border-radius: .2em;
+}
+
+.icofonts-admin .icofonts .btn:hover {
+	color: #EE3B89;
+}
+
+.icofonts-admin .icofonts .btn.selected,
+.icofonts-admin .icofonts .btn.selected:link,
+.icofonts-admin .icofonts .btn.selected:visited,
+.icofonts-admin .icofonts .btn.selected:hover {
+	color: #EE207A;
+}
+
+.icofonts-admin .icofonts .btn i {
+	display: block;
+	font-size: 2em;
+	margin: .25em auto .4em;
+}
+
+/* sidebar */
+
+.icofonts-admin .main-right {
+	width: 25em;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	background: #eee;
+	border-left: 1px solid #ddd; 
+}
+
+.icofonts-admin .main-title {
+	font-style: italic;
+	color: #F560A1;
+}
+
+.icofonts-admin .main-title b {
+	color: #08c;
+}
+
+.icofonts-admin .main-right h2 {
+	margin: 0 0 .5em;
+	font-size: .8em;
+	text-transform: uppercase;
+	letter-spacing: .1em;
+	color: #999;
+}
+
+.icofonts-admin #icofonts-selected { 
+	font-size: .8em;
+}
+
+.icofonts-admin #icofonts-selected a,
+.icofonts-admin #icofonts-selected a:link, 
+.icofonts-admin #icofonts-selected a:visited { 
+	text-decoration: none;
+	color: #666;
+	line-height: 1.3;
+	display: inline-block;
+}
+
+.icofonts-admin #icofonts-selected a:hover { 
+	background: #ddd;
+}
+
+.icofonts-admin .main-right-controls {
+	padding: 2em 0 0;
+}
+
+.icofonts-admin .main-right-controls #icofonts-update-btn {
+	border: none;
+	padding: .5em 1em;
+	background: #999;
+	color: #f0f0f0;
+	cursor: pointer;
+	text-transform: uppercase;
+	border-radius: .2em;
+}
+
+.icofonts-admin .main-right-controls #icofonts-update-btn:hover {
+	background: #08c;
+}
+
+.icofonts-admin .main-right-controls #icofonts-update-btn[disabled] {
+	background: #ccc;
+	color: #eee;
+}
+
+.icofonts-admin .main-right-controls #icofonts-msg {
+	font-size: .8em;
+	padding-top: .8em;
+	color: #999;
+	min-height: 3em;
+}
+
+
+
+
+
+
