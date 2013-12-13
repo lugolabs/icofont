@@ -9,7 +9,6 @@
 	Icofont.prototype = {
 		_update: function() {
 			var glyphs = this._glyphList.all();
-			console.log(glyphs);
 			$.map(glyphs, function(g) {
 				$('a#' + g).addClass('selected');
 			});

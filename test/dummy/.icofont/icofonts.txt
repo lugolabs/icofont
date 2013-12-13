@@ -1,4 +1,0 @@
-home
-connection
-newspaper
-pencil

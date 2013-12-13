@@ -2,10 +2,6 @@ require 'test_helper'
 
 module Icofont
 	class GlyphTest < ActiveSupport::TestCase
-		# def test_file
-		# 	assert glyph != nil
-		# end
-
 		def test_fetches_data
 			Glyph.set_data_path data_path
 			glyphs = Glyph.fetch

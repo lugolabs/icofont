@@ -1,0 +1,31 @@
+{
+  "fonts": [
+    "/Users/arti/ror/icofont/icofont/test/dummy/app/assets/icofont/icofont.ttf",
+    "/Users/arti/ror/icofont/icofont/test/dummy/app/assets/icofont/icofont.woff",
+    "/Users/arti/ror/icofont/icofont/test/dummy/app/assets/icofont/icofont.eot",
+    "/Users/arti/ror/icofont/icofont/test/dummy/app/assets/icofont/icofont.svg"
+  ],
+  "templates": [
+    "/Users/arti/ror/icofont/icofont/test/dummy/app/assets/icofont/icofont.css.erb"
+  ],
+  "glyphs": [
+    "aid",
+    "airplane",
+    "alarm2",
+    "android",
+    "angry",
+    "angry2",
+    "apple",
+    "arrow-down-left",
+    "arrow-down-left2",
+    "arrow-down-right2",
+    "arrow-down-right3",
+    "arrow-down",
+    "arrow-down4",
+    "arrow-left3",
+    "arrow-right",
+    "arrow-up-left3",
+    "brightness-contrast",
+    "brightness-medium"
+  ]
+}

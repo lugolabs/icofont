@@ -11,7 +11,7 @@ module Icofont
 
 		def generate
 			with_glyphs do |tmp_dir|
-				clean_dir output_path
+				clean_dir Paths.output_path
 				generate_vectors tmp_dir
 			end
 		end
@@ -22,25 +22,18 @@ module Icofont
 			options = {
         # debug: 			true,
 				input:      vectors_path, 
-				output:     output_path,
-				templates:  [templates_path],
+				output:     Paths.output_path,
+				templates:  [Paths.templates_path],
 				font_name:  FONT_NAME,
-				css_prefix: CSS_PREFIX,
+				css_prefix: "#{FONT_NAME}-",
     		no_hash: 		true,
-				verbose:    true
+				verbose:    true,
+				manifest:   Paths.manifest_path, 
 			}
 
 			opts = Fontcustom::Options.new(options)
 			Fontcustom::Generator::Font.start [opts]
       Fontcustom::Generator::Template.start [opts]
-		end
-
-		def templates_path
-			@templates_path ||= File.expand_path("../templates/#{ORIGINAL_FONT_NAME}.css", __FILE__)
-		end
-
-		def output_path
-			@output_path ||= File.join(Rails.root, 'app/assets/icofont')
 		end
 
 		def with_glyphs

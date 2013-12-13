@@ -1,23 +1,2331 @@
+<style>
+  @font-face {
+    font-family: "icofont";
+    src: url(<%= asset_path "icofont/icofont.svg#icofont" %>) format("svg");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+
+  .icofont {
+    display: inline-block;
+    font-family: "icofont";
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    line-height: 1;
+    text-decoration: inherit;
+    text-transform: none;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+  }
+</style>
+
 <div class="icofonts cf" id="icofonts-container">
 
   <a href="#toggle" class="btn" id="accessibility">
-    <i aria-hidden="true" class="icofont-accessibility"></i>
-    &nbsp;icofont-accessibility
+    <i class="icofont">&#xf100;</i>
+    icofont-accessibility
+  </a>
+
+  <a href="#toggle" class="btn" id="address-book">
+    <i class="icofont">&#xf101;</i>
+    icofont-address-book
+  </a>
+
+  <a href="#toggle" class="btn" id="aid">
+    <i class="icofont">&#xf102;</i>
+    icofont-aid
+  </a>
+
+  <a href="#toggle" class="btn" id="airplane">
+    <i class="icofont">&#xf103;</i>
+    icofont-airplane
   </a>
 
   <a href="#toggle" class="btn" id="alarm">
-    <i aria-hidden="true" class="icofont-alarm"></i>
-    &nbsp;icofont-alarm
+    <i class="icofont">&#xf104;</i>
+    icofont-alarm
   </a>
 
   <a href="#toggle" class="btn" id="alarm2">
-    <i aria-hidden="true" class="icofont-alarm2"></i>
-    &nbsp;icofont-alarm2
+    <i class="icofont">&#xf105;</i>
+    icofont-alarm2
   </a>
 
   <a href="#toggle" class="btn" id="android">
-    <i aria-hidden="true" class="icofont-android"></i>
-    &nbsp;icofont-android
+    <i class="icofont">&#xf106;</i>
+    icofont-android
+  </a>
+
+  <a href="#toggle" class="btn" id="angry">
+    <i class="icofont">&#xf107;</i>
+    icofont-angry
+  </a>
+
+  <a href="#toggle" class="btn" id="angry2">
+    <i class="icofont">&#xf108;</i>
+    icofont-angry2
+  </a>
+
+  <a href="#toggle" class="btn" id="apple">
+    <i class="icofont">&#xf109;</i>
+    icofont-apple
+  </a>
+
+  <a href="#toggle" class="btn" id="arrow-down-left">
+    <i class="icofont">&#xf10a;</i>
+    icofont-arrow-down-left
+  </a>
+
+  <a href="#toggle" class="btn" id="arrow-down-left2">
+    <i class="icofont">&#xf10b;</i>
+    icofont-arrow-down-left2
+  </a>
+
+  <a href="#toggle" class="btn" id="arrow-down-left3">
+    <i class="icofont">&#xf10c;</i>
+    icofont-arrow-down-left3
+  </a>
+
+  <a href="#toggle" class="btn" id="arrow-down-right">
+    <i class="icofont">&#xf10d;</i>
+    icofont-arrow-down-right
+  </a>
+
+  <a href="#toggle" class="btn" id="arrow-down-right2">
+    <i class="icofont">&#xf10e;</i>
+    icofont-arrow-down-right2
+  </a>
+
+  <a href="#toggle" class="btn" id="arrow-down-right3">
+    <i class="icofont">&#xf10f;</i>
+    icofont-arrow-down-right3
+  </a>
+
+  <a href="#toggle" class="btn" id="arrow-down">
+    <i class="icofont">&#xf110;</i>
+    icofont-arrow-down
+  </a>
+
+  <a href="#toggle" class="btn" id="arrow-down2">
+    <i class="icofont">&#xf111;</i>
+    icofont-arrow-down2
+  </a>
+
+  <a href="#toggle" class="btn" id="arrow-down3">
+    <i class="icofont">&#xf112;</i>
+    icofont-arrow-down3
+  </a>
+
+  <a href="#toggle" class="btn" id="arrow-down4">
+    <i class="icofont">&#xf113;</i>
+    icofont-arrow-down4
+  </a>
+
+  <a href="#toggle" class="btn" id="arrow-down5">
+    <i class="icofont">&#xf114;</i>
+    icofont-arrow-down5
+  </a>
+
+  <a href="#toggle" class="btn" id="arrow-left">
+    <i class="icofont">&#xf115;</i>
+    icofont-arrow-left
+  </a>
+
+  <a href="#toggle" class="btn" id="arrow-left2">
+    <i class="icofont">&#xf116;</i>
+    icofont-arrow-left2
+  </a>
+
+  <a href="#toggle" class="btn" id="arrow-left3">
+    <i class="icofont">&#xf117;</i>
+    icofont-arrow-left3
+  </a>
+
+  <a href="#toggle" class="btn" id="arrow-left4">
+    <i class="icofont">&#xf118;</i>
+    icofont-arrow-left4
+  </a>
+
+  <a href="#toggle" class="btn" id="arrow-left5">
+    <i class="icofont">&#xf119;</i>
+    icofont-arrow-left5
+  </a>
+
+  <a href="#toggle" class="btn" id="arrow-right">
+    <i class="icofont">&#xf11a;</i>
+    icofont-arrow-right
+  </a>
+
+  <a href="#toggle" class="btn" id="arrow-right2">
+    <i class="icofont">&#xf11b;</i>
+    icofont-arrow-right2
+  </a>
+
+  <a href="#toggle" class="btn" id="arrow-right3">
+    <i class="icofont">&#xf11c;</i>
+    icofont-arrow-right3
+  </a>
+
+  <a href="#toggle" class="btn" id="arrow-right4">
+    <i class="icofont">&#xf11d;</i>
+    icofont-arrow-right4
+  </a>
+
+  <a href="#toggle" class="btn" id="arrow-right5">
+    <i class="icofont">&#xf11e;</i>
+    icofont-arrow-right5
+  </a>
+
+  <a href="#toggle" class="btn" id="arrow-up-left">
+    <i class="icofont">&#xf11f;</i>
+    icofont-arrow-up-left
+  </a>
+
+  <a href="#toggle" class="btn" id="arrow-up-left2">
+    <i class="icofont">&#xf120;</i>
+    icofont-arrow-up-left2
+  </a>
+
+  <a href="#toggle" class="btn" id="arrow-up-left3">
+    <i class="icofont">&#xf121;</i>
+    icofont-arrow-up-left3
+  </a>
+
+  <a href="#toggle" class="btn" id="arrow-up-right">
+    <i class="icofont">&#xf122;</i>
+    icofont-arrow-up-right
+  </a>
+
+  <a href="#toggle" class="btn" id="arrow-up-right2">
+    <i class="icofont">&#xf123;</i>
+    icofont-arrow-up-right2
+  </a>
+
+  <a href="#toggle" class="btn" id="arrow-up-right3">
+    <i class="icofont">&#xf124;</i>
+    icofont-arrow-up-right3
+  </a>
+
+  <a href="#toggle" class="btn" id="arrow-up">
+    <i class="icofont">&#xf125;</i>
+    icofont-arrow-up
+  </a>
+
+  <a href="#toggle" class="btn" id="arrow-up2">
+    <i class="icofont">&#xf126;</i>
+    icofont-arrow-up2
+  </a>
+
+  <a href="#toggle" class="btn" id="arrow-up3">
+    <i class="icofont">&#xf127;</i>
+    icofont-arrow-up3
+  </a>
+
+  <a href="#toggle" class="btn" id="arrow-up4">
+    <i class="icofont">&#xf128;</i>
+    icofont-arrow-up4
+  </a>
+
+  <a href="#toggle" class="btn" id="arrow-up5">
+    <i class="icofont">&#xf129;</i>
+    icofont-arrow-up5
+  </a>
+
+  <a href="#toggle" class="btn" id="attachment">
+    <i class="icofont">&#xf12a;</i>
+    icofont-attachment
+  </a>
+
+  <a href="#toggle" class="btn" id="backward">
+    <i class="icofont">&#xf12b;</i>
+    icofont-backward
+  </a>
+
+  <a href="#toggle" class="btn" id="backward2">
+    <i class="icofont">&#xf12c;</i>
+    icofont-backward2
+  </a>
+
+  <a href="#toggle" class="btn" id="barcode">
+    <i class="icofont">&#xf12d;</i>
+    icofont-barcode
+  </a>
+
+  <a href="#toggle" class="btn" id="bars">
+    <i class="icofont">&#xf12e;</i>
+    icofont-bars
+  </a>
+
+  <a href="#toggle" class="btn" id="bars2">
+    <i class="icofont">&#xf12f;</i>
+    icofont-bars2
+  </a>
+
+  <a href="#toggle" class="btn" id="bell">
+    <i class="icofont">&#xf130;</i>
+    icofont-bell
+  </a>
+
+  <a href="#toggle" class="btn" id="binoculars">
+    <i class="icofont">&#xf131;</i>
+    icofont-binoculars
+  </a>
+
+  <a href="#toggle" class="btn" id="blocked">
+    <i class="icofont">&#xf132;</i>
+    icofont-blocked
+  </a>
+
+  <a href="#toggle" class="btn" id="blog">
+    <i class="icofont">&#xf133;</i>
+    icofont-blog
+  </a>
+
+  <a href="#toggle" class="btn" id="blogger">
+    <i class="icofont">&#xf134;</i>
+    icofont-blogger
+  </a>
+
+  <a href="#toggle" class="btn" id="blogger2">
+    <i class="icofont">&#xf135;</i>
+    icofont-blogger2
+  </a>
+
+  <a href="#toggle" class="btn" id="bold">
+    <i class="icofont">&#xf136;</i>
+    icofont-bold
+  </a>
+
+  <a href="#toggle" class="btn" id="book">
+    <i class="icofont">&#xf137;</i>
+    icofont-book
+  </a>
+
+  <a href="#toggle" class="btn" id="bookmark">
+    <i class="icofont">&#xf138;</i>
+    icofont-bookmark
+  </a>
+
+  <a href="#toggle" class="btn" id="bookmarks">
+    <i class="icofont">&#xf139;</i>
+    icofont-bookmarks
+  </a>
+
+  <a href="#toggle" class="btn" id="books">
+    <i class="icofont">&#xf13a;</i>
+    icofont-books
+  </a>
+
+  <a href="#toggle" class="btn" id="box-add">
+    <i class="icofont">&#xf13b;</i>
+    icofont-box-add
+  </a>
+
+  <a href="#toggle" class="btn" id="box-remove">
+    <i class="icofont">&#xf13c;</i>
+    icofont-box-remove
+  </a>
+
+  <a href="#toggle" class="btn" id="briefcase">
+    <i class="icofont">&#xf13d;</i>
+    icofont-briefcase
+  </a>
+
+  <a href="#toggle" class="btn" id="brightness-contrast">
+    <i class="icofont">&#xf13e;</i>
+    icofont-brightness-contrast
+  </a>
+
+  <a href="#toggle" class="btn" id="brightness-medium">
+    <i class="icofont">&#xf13f;</i>
+    icofont-brightness-medium
+  </a>
+
+  <a href="#toggle" class="btn" id="bubble">
+    <i class="icofont">&#xf140;</i>
+    icofont-bubble
+  </a>
+
+  <a href="#toggle" class="btn" id="bubble2">
+    <i class="icofont">&#xf141;</i>
+    icofont-bubble2
+  </a>
+
+  <a href="#toggle" class="btn" id="bubbles">
+    <i class="icofont">&#xf142;</i>
+    icofont-bubbles
+  </a>
+
+  <a href="#toggle" class="btn" id="bubbles2">
+    <i class="icofont">&#xf143;</i>
+    icofont-bubbles2
+  </a>
+
+  <a href="#toggle" class="btn" id="bubbles3">
+    <i class="icofont">&#xf144;</i>
+    icofont-bubbles3
+  </a>
+
+  <a href="#toggle" class="btn" id="bubbles4">
+    <i class="icofont">&#xf145;</i>
+    icofont-bubbles4
+  </a>
+
+  <a href="#toggle" class="btn" id="bug">
+    <i class="icofont">&#xf146;</i>
+    icofont-bug
+  </a>
+
+  <a href="#toggle" class="btn" id="bullhorn">
+    <i class="icofont">&#xf147;</i>
+    icofont-bullhorn
+  </a>
+
+  <a href="#toggle" class="btn" id="busy">
+    <i class="icofont">&#xf148;</i>
+    icofont-busy
+  </a>
+
+  <a href="#toggle" class="btn" id="cabinet">
+    <i class="icofont">&#xf149;</i>
+    icofont-cabinet
+  </a>
+
+  <a href="#toggle" class="btn" id="calculate">
+    <i class="icofont">&#xf14a;</i>
+    icofont-calculate
+  </a>
+
+  <a href="#toggle" class="btn" id="calendar">
+    <i class="icofont">&#xf14b;</i>
+    icofont-calendar
+  </a>
+
+  <a href="#toggle" class="btn" id="calendar2">
+    <i class="icofont">&#xf14c;</i>
+    icofont-calendar2
+  </a>
+
+  <a href="#toggle" class="btn" id="camera">
+    <i class="icofont">&#xf14d;</i>
+    icofont-camera
+  </a>
+
+  <a href="#toggle" class="btn" id="camera2">
+    <i class="icofont">&#xf14e;</i>
+    icofont-camera2
+  </a>
+
+  <a href="#toggle" class="btn" id="cancel-circle">
+    <i class="icofont">&#xf14f;</i>
+    icofont-cancel-circle
+  </a>
+
+  <a href="#toggle" class="btn" id="cart">
+    <i class="icofont">&#xf150;</i>
+    icofont-cart
+  </a>
+
+  <a href="#toggle" class="btn" id="cart2">
+    <i class="icofont">&#xf151;</i>
+    icofont-cart2
+  </a>
+
+  <a href="#toggle" class="btn" id="cart3">
+    <i class="icofont">&#xf152;</i>
+    icofont-cart3
+  </a>
+
+  <a href="#toggle" class="btn" id="checkbox-checked">
+    <i class="icofont">&#xf153;</i>
+    icofont-checkbox-checked
+  </a>
+
+  <a href="#toggle" class="btn" id="checkbox-partial">
+    <i class="icofont">&#xf154;</i>
+    icofont-checkbox-partial
+  </a>
+
+  <a href="#toggle" class="btn" id="checkbox-unchecked">
+    <i class="icofont">&#xf155;</i>
+    icofont-checkbox-unchecked
+  </a>
+
+  <a href="#toggle" class="btn" id="checkmark-circle">
+    <i class="icofont">&#xf156;</i>
+    icofont-checkmark-circle
+  </a>
+
+  <a href="#toggle" class="btn" id="checkmark">
+    <i class="icofont">&#xf157;</i>
+    icofont-checkmark
+  </a>
+
+  <a href="#toggle" class="btn" id="checkmark2">
+    <i class="icofont">&#xf158;</i>
+    icofont-checkmark2
+  </a>
+
+  <a href="#toggle" class="btn" id="chrome">
+    <i class="icofont">&#xf159;</i>
+    icofont-chrome
+  </a>
+
+  <a href="#toggle" class="btn" id="clock">
+    <i class="icofont">&#xf15a;</i>
+    icofont-clock
+  </a>
+
+  <a href="#toggle" class="btn" id="clock2">
+    <i class="icofont">&#xf15b;</i>
+    icofont-clock2
+  </a>
+
+  <a href="#toggle" class="btn" id="close">
+    <i class="icofont">&#xf15c;</i>
+    icofont-close
+  </a>
+
+  <a href="#toggle" class="btn" id="cloud-download">
+    <i class="icofont">&#xf15d;</i>
+    icofont-cloud-download
+  </a>
+
+  <a href="#toggle" class="btn" id="cloud-upload">
+    <i class="icofont">&#xf15e;</i>
+    icofont-cloud-upload
+  </a>
+
+  <a href="#toggle" class="btn" id="cloud">
+    <i class="icofont">&#xf15f;</i>
+    icofont-cloud
+  </a>
+
+  <a href="#toggle" class="btn" id="clubs">
+    <i class="icofont">&#xf160;</i>
+    icofont-clubs
+  </a>
+
+  <a href="#toggle" class="btn" id="code">
+    <i class="icofont">&#xf161;</i>
+    icofont-code
+  </a>
+
+  <a href="#toggle" class="btn" id="code2">
+    <i class="icofont">&#xf162;</i>
+    icofont-code2
+  </a>
+
+  <a href="#toggle" class="btn" id="cog">
+    <i class="icofont">&#xf163;</i>
+    icofont-cog
+  </a>
+
+  <a href="#toggle" class="btn" id="cog2">
+    <i class="icofont">&#xf164;</i>
+    icofont-cog2
+  </a>
+
+  <a href="#toggle" class="btn" id="cogs">
+    <i class="icofont">&#xf165;</i>
+    icofont-cogs
+  </a>
+
+  <a href="#toggle" class="btn" id="coin">
+    <i class="icofont">&#xf166;</i>
+    icofont-coin
+  </a>
+
+  <a href="#toggle" class="btn" id="compass">
+    <i class="icofont">&#xf167;</i>
+    icofont-compass
+  </a>
+
+  <a href="#toggle" class="btn" id="confused">
+    <i class="icofont">&#xf168;</i>
+    icofont-confused
+  </a>
+
+  <a href="#toggle" class="btn" id="confused2">
+    <i class="icofont">&#xf169;</i>
+    icofont-confused2
+  </a>
+
+  <a href="#toggle" class="btn" id="connection">
+    <i class="icofont">&#xf16a;</i>
+    icofont-connection
+  </a>
+
+  <a href="#toggle" class="btn" id="console">
+    <i class="icofont">&#xf16b;</i>
+    icofont-console
+  </a>
+
+  <a href="#toggle" class="btn" id="contract">
+    <i class="icofont">&#xf16c;</i>
+    icofont-contract
+  </a>
+
+  <a href="#toggle" class="btn" id="contract2">
+    <i class="icofont">&#xf16d;</i>
+    icofont-contract2
+  </a>
+
+  <a href="#toggle" class="btn" id="contrast">
+    <i class="icofont">&#xf16e;</i>
+    icofont-contrast
+  </a>
+
+  <a href="#toggle" class="btn" id="cool">
+    <i class="icofont">&#xf16f;</i>
+    icofont-cool
+  </a>
+
+  <a href="#toggle" class="btn" id="cool2">
+    <i class="icofont">&#xf170;</i>
+    icofont-cool2
+  </a>
+
+  <a href="#toggle" class="btn" id="copy">
+    <i class="icofont">&#xf171;</i>
+    icofont-copy
+  </a>
+
+  <a href="#toggle" class="btn" id="copy2">
+    <i class="icofont">&#xf172;</i>
+    icofont-copy2
+  </a>
+
+  <a href="#toggle" class="btn" id="copy3">
+    <i class="icofont">&#xf173;</i>
+    icofont-copy3
+  </a>
+
+  <a href="#toggle" class="btn" id="credit">
+    <i class="icofont">&#xf174;</i>
+    icofont-credit
+  </a>
+
+  <a href="#toggle" class="btn" id="crop">
+    <i class="icofont">&#xf175;</i>
+    icofont-crop
+  </a>
+
+  <a href="#toggle" class="btn" id="css3">
+    <i class="icofont">&#xf176;</i>
+    icofont-css3
+  </a>
+
+  <a href="#toggle" class="btn" id="dashboard">
+    <i class="icofont">&#xf177;</i>
+    icofont-dashboard
+  </a>
+
+  <a href="#toggle" class="btn" id="delicious">
+    <i class="icofont">&#xf178;</i>
+    icofont-delicious
+  </a>
+
+  <a href="#toggle" class="btn" id="deviantart">
+    <i class="icofont">&#xf179;</i>
+    icofont-deviantart
+  </a>
+
+  <a href="#toggle" class="btn" id="deviantart2">
+    <i class="icofont">&#xf17a;</i>
+    icofont-deviantart2
+  </a>
+
+  <a href="#toggle" class="btn" id="diamonds">
+    <i class="icofont">&#xf17b;</i>
+    icofont-diamonds
+  </a>
+
+  <a href="#toggle" class="btn" id="dice">
+    <i class="icofont">&#xf17c;</i>
+    icofont-dice
+  </a>
+
+  <a href="#toggle" class="btn" id="disk">
+    <i class="icofont">&#xf17d;</i>
+    icofont-disk
+  </a>
+
+  <a href="#toggle" class="btn" id="download">
+    <i class="icofont">&#xf17e;</i>
+    icofont-download
+  </a>
+
+  <a href="#toggle" class="btn" id="download2">
+    <i class="icofont">&#xf17f;</i>
+    icofont-download2
+  </a>
+
+  <a href="#toggle" class="btn" id="download3">
+    <i class="icofont">&#xf180;</i>
+    icofont-download3
+  </a>
+
+  <a href="#toggle" class="btn" id="drawer">
+    <i class="icofont">&#xf181;</i>
+    icofont-drawer
+  </a>
+
+  <a href="#toggle" class="btn" id="drawer2">
+    <i class="icofont">&#xf182;</i>
+    icofont-drawer2
+  </a>
+
+  <a href="#toggle" class="btn" id="drawer3">
+    <i class="icofont">&#xf183;</i>
+    icofont-drawer3
+  </a>
+
+  <a href="#toggle" class="btn" id="dribbble">
+    <i class="icofont">&#xf184;</i>
+    icofont-dribbble
+  </a>
+
+  <a href="#toggle" class="btn" id="dribbble2">
+    <i class="icofont">&#xf185;</i>
+    icofont-dribbble2
+  </a>
+
+  <a href="#toggle" class="btn" id="dribbble3">
+    <i class="icofont">&#xf186;</i>
+    icofont-dribbble3
+  </a>
+
+  <a href="#toggle" class="btn" id="droplet">
+    <i class="icofont">&#xf187;</i>
+    icofont-droplet
+  </a>
+
+  <a href="#toggle" class="btn" id="earth">
+    <i class="icofont">&#xf188;</i>
+    icofont-earth
+  </a>
+
+  <a href="#toggle" class="btn" id="eject">
+    <i class="icofont">&#xf189;</i>
+    icofont-eject
+  </a>
+
+  <a href="#toggle" class="btn" id="embed">
+    <i class="icofont">&#xf18a;</i>
+    icofont-embed
+  </a>
+
+  <a href="#toggle" class="btn" id="enter">
+    <i class="icofont">&#xf18b;</i>
+    icofont-enter
+  </a>
+
+  <a href="#toggle" class="btn" id="envelop">
+    <i class="icofont">&#xf18c;</i>
+    icofont-envelop
+  </a>
+
+  <a href="#toggle" class="btn" id="equalizer">
+    <i class="icofont">&#xf18d;</i>
+    icofont-equalizer
+  </a>
+
+  <a href="#toggle" class="btn" id="evil">
+    <i class="icofont">&#xf18e;</i>
+    icofont-evil
+  </a>
+
+  <a href="#toggle" class="btn" id="evil2">
+    <i class="icofont">&#xf18f;</i>
+    icofont-evil2
+  </a>
+
+  <a href="#toggle" class="btn" id="exit">
+    <i class="icofont">&#xf190;</i>
+    icofont-exit
+  </a>
+
+  <a href="#toggle" class="btn" id="expand">
+    <i class="icofont">&#xf191;</i>
+    icofont-expand
+  </a>
+
+  <a href="#toggle" class="btn" id="expand2">
+    <i class="icofont">&#xf192;</i>
+    icofont-expand2
+  </a>
+
+  <a href="#toggle" class="btn" id="eye-blocked">
+    <i class="icofont">&#xf193;</i>
+    icofont-eye-blocked
+  </a>
+
+  <a href="#toggle" class="btn" id="eye">
+    <i class="icofont">&#xf194;</i>
+    icofont-eye
+  </a>
+
+  <a href="#toggle" class="btn" id="eye2">
+    <i class="icofont">&#xf195;</i>
+    icofont-eye2
+  </a>
+
+  <a href="#toggle" class="btn" id="facebook">
+    <i class="icofont">&#xf196;</i>
+    icofont-facebook
+  </a>
+
+  <a href="#toggle" class="btn" id="facebook2">
+    <i class="icofont">&#xf197;</i>
+    icofont-facebook2
+  </a>
+
+  <a href="#toggle" class="btn" id="facebook3">
+    <i class="icofont">&#xf198;</i>
+    icofont-facebook3
+  </a>
+
+  <a href="#toggle" class="btn" id="feed">
+    <i class="icofont">&#xf199;</i>
+    icofont-feed
+  </a>
+
+  <a href="#toggle" class="btn" id="feed2">
+    <i class="icofont">&#xf19a;</i>
+    icofont-feed2
+  </a>
+
+  <a href="#toggle" class="btn" id="feed3">
+    <i class="icofont">&#xf19b;</i>
+    icofont-feed3
+  </a>
+
+  <a href="#toggle" class="btn" id="feed4">
+    <i class="icofont">&#xf19c;</i>
+    icofont-feed4
+  </a>
+
+  <a href="#toggle" class="btn" id="file-css">
+    <i class="icofont">&#xf19d;</i>
+    icofont-file-css
+  </a>
+
+  <a href="#toggle" class="btn" id="file-excel">
+    <i class="icofont">&#xf19e;</i>
+    icofont-file-excel
+  </a>
+
+  <a href="#toggle" class="btn" id="file-openoffice">
+    <i class="icofont">&#xf19f;</i>
+    icofont-file-openoffice
+  </a>
+
+  <a href="#toggle" class="btn" id="file-pdf">
+    <i class="icofont">&#xf1a0;</i>
+    icofont-file-pdf
+  </a>
+
+  <a href="#toggle" class="btn" id="file-powerpoint">
+    <i class="icofont">&#xf1a1;</i>
+    icofont-file-powerpoint
+  </a>
+
+  <a href="#toggle" class="btn" id="file-word">
+    <i class="icofont">&#xf1a2;</i>
+    icofont-file-word
+  </a>
+
+  <a href="#toggle" class="btn" id="file-xml">
+    <i class="icofont">&#xf1a3;</i>
+    icofont-file-xml
+  </a>
+
+  <a href="#toggle" class="btn" id="file-zip">
+    <i class="icofont">&#xf1a4;</i>
+    icofont-file-zip
+  </a>
+
+  <a href="#toggle" class="btn" id="file">
+    <i class="icofont">&#xf1a5;</i>
+    icofont-file
+  </a>
+
+  <a href="#toggle" class="btn" id="file2">
+    <i class="icofont">&#xf1a6;</i>
+    icofont-file2
+  </a>
+
+  <a href="#toggle" class="btn" id="file3">
+    <i class="icofont">&#xf1a7;</i>
+    icofont-file3
+  </a>
+
+  <a href="#toggle" class="btn" id="file4">
+    <i class="icofont">&#xf1a8;</i>
+    icofont-file4
+  </a>
+
+  <a href="#toggle" class="btn" id="film">
+    <i class="icofont">&#xf1a9;</i>
+    icofont-film
+  </a>
+
+  <a href="#toggle" class="btn" id="filter">
+    <i class="icofont">&#xf1aa;</i>
+    icofont-filter
+  </a>
+
+  <a href="#toggle" class="btn" id="filter2">
+    <i class="icofont">&#xf1ab;</i>
+    icofont-filter2
+  </a>
+
+  <a href="#toggle" class="btn" id="finder">
+    <i class="icofont">&#xf1ac;</i>
+    icofont-finder
+  </a>
+
+  <a href="#toggle" class="btn" id="fire">
+    <i class="icofont">&#xf1ad;</i>
+    icofont-fire
+  </a>
+
+  <a href="#toggle" class="btn" id="firefox">
+    <i class="icofont">&#xf1ae;</i>
+    icofont-firefox
+  </a>
+
+  <a href="#toggle" class="btn" id="first">
+    <i class="icofont">&#xf1af;</i>
+    icofont-first
+  </a>
+
+  <a href="#toggle" class="btn" id="flag">
+    <i class="icofont">&#xf1b0;</i>
+    icofont-flag
+  </a>
+
+  <a href="#toggle" class="btn" id="flattr">
+    <i class="icofont">&#xf1b1;</i>
+    icofont-flattr
+  </a>
+
+  <a href="#toggle" class="btn" id="flickr">
+    <i class="icofont">&#xf1b2;</i>
+    icofont-flickr
+  </a>
+
+  <a href="#toggle" class="btn" id="flickr2">
+    <i class="icofont">&#xf1b3;</i>
+    icofont-flickr2
+  </a>
+
+  <a href="#toggle" class="btn" id="flickr3">
+    <i class="icofont">&#xf1b4;</i>
+    icofont-flickr3
+  </a>
+
+  <a href="#toggle" class="btn" id="flickr4">
+    <i class="icofont">&#xf1b5;</i>
+    icofont-flickr4
+  </a>
+
+  <a href="#toggle" class="btn" id="flip">
+    <i class="icofont">&#xf1b6;</i>
+    icofont-flip
+  </a>
+
+  <a href="#toggle" class="btn" id="flip2">
+    <i class="icofont">&#xf1b7;</i>
+    icofont-flip2
+  </a>
+
+  <a href="#toggle" class="btn" id="folder-open">
+    <i class="icofont">&#xf1b8;</i>
+    icofont-folder-open
+  </a>
+
+  <a href="#toggle" class="btn" id="folder">
+    <i class="icofont">&#xf1b9;</i>
+    icofont-folder
+  </a>
+
+  <a href="#toggle" class="btn" id="font">
+    <i class="icofont">&#xf1ba;</i>
+    icofont-font
+  </a>
+
+  <a href="#toggle" class="btn" id="food">
+    <i class="icofont">&#xf1bb;</i>
+    icofont-food
+  </a>
+
+  <a href="#toggle" class="btn" id="forrst">
+    <i class="icofont">&#xf1bc;</i>
+    icofont-forrst
+  </a>
+
+  <a href="#toggle" class="btn" id="forrst2">
+    <i class="icofont">&#xf1bd;</i>
+    icofont-forrst2
+  </a>
+
+  <a href="#toggle" class="btn" id="forward">
+    <i class="icofont">&#xf1be;</i>
+    icofont-forward
+  </a>
+
+  <a href="#toggle" class="btn" id="forward2">
+    <i class="icofont">&#xf1bf;</i>
+    icofont-forward2
+  </a>
+
+  <a href="#toggle" class="btn" id="forward3">
+    <i class="icofont">&#xf1c0;</i>
+    icofont-forward3
+  </a>
+
+  <a href="#toggle" class="btn" id="foursquare">
+    <i class="icofont">&#xf1c1;</i>
+    icofont-foursquare
+  </a>
+
+  <a href="#toggle" class="btn" id="foursquare2">
+    <i class="icofont">&#xf1c2;</i>
+    icofont-foursquare2
+  </a>
+
+  <a href="#toggle" class="btn" id="gift">
+    <i class="icofont">&#xf1c3;</i>
+    icofont-gift
+  </a>
+
+  <a href="#toggle" class="btn" id="github">
+    <i class="icofont">&#xf1c4;</i>
+    icofont-github
+  </a>
+
+  <a href="#toggle" class="btn" id="github2">
+    <i class="icofont">&#xf1c5;</i>
+    icofont-github2
+  </a>
+
+  <a href="#toggle" class="btn" id="github3">
+    <i class="icofont">&#xf1c6;</i>
+    icofont-github3
+  </a>
+
+  <a href="#toggle" class="btn" id="github4">
+    <i class="icofont">&#xf1c7;</i>
+    icofont-github4
+  </a>
+
+  <a href="#toggle" class="btn" id="github5">
+    <i class="icofont">&#xf1c8;</i>
+    icofont-github5
+  </a>
+
+  <a href="#toggle" class="btn" id="glass">
+    <i class="icofont">&#xf1c9;</i>
+    icofont-glass
+  </a>
+
+  <a href="#toggle" class="btn" id="globe">
+    <i class="icofont">&#xf1ca;</i>
+    icofont-globe
+  </a>
+
+  <a href="#toggle" class="btn" id="google-drive">
+    <i class="icofont">&#xf1cb;</i>
+    icofont-google-drive
+  </a>
+
+  <a href="#toggle" class="btn" id="google-plus">
+    <i class="icofont">&#xf1cc;</i>
+    icofont-google-plus
+  </a>
+
+  <a href="#toggle" class="btn" id="google-plus2">
+    <i class="icofont">&#xf1cd;</i>
+    icofont-google-plus2
+  </a>
+
+  <a href="#toggle" class="btn" id="google-plus3">
+    <i class="icofont">&#xf1ce;</i>
+    icofont-google-plus3
+  </a>
+
+  <a href="#toggle" class="btn" id="google-plus4">
+    <i class="icofont">&#xf1cf;</i>
+    icofont-google-plus4
+  </a>
+
+  <a href="#toggle" class="btn" id="google">
+    <i class="icofont">&#xf1d0;</i>
+    icofont-google
+  </a>
+
+  <a href="#toggle" class="btn" id="grin">
+    <i class="icofont">&#xf1d1;</i>
+    icofont-grin
+  </a>
+
+  <a href="#toggle" class="btn" id="grin2">
+    <i class="icofont">&#xf1d2;</i>
+    icofont-grin2
+  </a>
+
+  <a href="#toggle" class="btn" id="hammer">
+    <i class="icofont">&#xf1d3;</i>
+    icofont-hammer
+  </a>
+
+  <a href="#toggle" class="btn" id="hammer2">
+    <i class="icofont">&#xf1d4;</i>
+    icofont-hammer2
+  </a>
+
+  <a href="#toggle" class="btn" id="happy">
+    <i class="icofont">&#xf1d5;</i>
+    icofont-happy
+  </a>
+
+  <a href="#toggle" class="btn" id="happy2">
+    <i class="icofont">&#xf1d6;</i>
+    icofont-happy2
+  </a>
+
+  <a href="#toggle" class="btn" id="headphones">
+    <i class="icofont">&#xf1d7;</i>
+    icofont-headphones
+  </a>
+
+  <a href="#toggle" class="btn" id="heart-broken">
+    <i class="icofont">&#xf1d8;</i>
+    icofont-heart-broken
+  </a>
+
+  <a href="#toggle" class="btn" id="heart">
+    <i class="icofont">&#xf1d9;</i>
+    icofont-heart
+  </a>
+
+  <a href="#toggle" class="btn" id="heart2">
+    <i class="icofont">&#xf1da;</i>
+    icofont-heart2
+  </a>
+
+  <a href="#toggle" class="btn" id="history">
+    <i class="icofont">&#xf1db;</i>
+    icofont-history
+  </a>
+
+  <a href="#toggle" class="btn" id="home">
+    <i class="icofont">&#xf1dc;</i>
+    icofont-home
+  </a>
+
+  <a href="#toggle" class="btn" id="home2">
+    <i class="icofont">&#xf1dd;</i>
+    icofont-home2
+  </a>
+
+  <a href="#toggle" class="btn" id="home3">
+    <i class="icofont">&#xf1de;</i>
+    icofont-home3
+  </a>
+
+  <a href="#toggle" class="btn" id="html5">
+    <i class="icofont">&#xf1df;</i>
+    icofont-html5
+  </a>
+
+  <a href="#toggle" class="btn" id="html52">
+    <i class="icofont">&#xf1e0;</i>
+    icofont-html52
+  </a>
+
+  <a href="#toggle" class="btn" id="IcoMoon">
+    <i class="icofont">&#xf1e1;</i>
+    icofont-IcoMoon
+  </a>
+
+  <a href="#toggle" class="btn" id="IE">
+    <i class="icofont">&#xf1e2;</i>
+    icofont-IE
+  </a>
+
+  <a href="#toggle" class="btn" id="image">
+    <i class="icofont">&#xf1e3;</i>
+    icofont-image
+  </a>
+
+  <a href="#toggle" class="btn" id="image2">
+    <i class="icofont">&#xf1e4;</i>
+    icofont-image2
+  </a>
+
+  <a href="#toggle" class="btn" id="images">
+    <i class="icofont">&#xf1e5;</i>
+    icofont-images
+  </a>
+
+  <a href="#toggle" class="btn" id="indent-decrease">
+    <i class="icofont">&#xf1e6;</i>
+    icofont-indent-decrease
+  </a>
+
+  <a href="#toggle" class="btn" id="indent-increase">
+    <i class="icofont">&#xf1e7;</i>
+    icofont-indent-increase
+  </a>
+
+  <a href="#toggle" class="btn" id="info">
+    <i class="icofont">&#xf1e8;</i>
+    icofont-info
+  </a>
+
+  <a href="#toggle" class="btn" id="info2">
+    <i class="icofont">&#xf1e9;</i>
+    icofont-info2
+  </a>
+
+  <a href="#toggle" class="btn" id="insert-template">
+    <i class="icofont">&#xf1ea;</i>
+    icofont-insert-template
+  </a>
+
+  <a href="#toggle" class="btn" id="instagram">
+    <i class="icofont">&#xf1eb;</i>
+    icofont-instagram
+  </a>
+
+  <a href="#toggle" class="btn" id="italic">
+    <i class="icofont">&#xf1ec;</i>
+    icofont-italic
+  </a>
+
+  <a href="#toggle" class="btn" id="joomla">
+    <i class="icofont">&#xf1ed;</i>
+    icofont-joomla
+  </a>
+
+  <a href="#toggle" class="btn" id="key">
+    <i class="icofont">&#xf1ee;</i>
+    icofont-key
+  </a>
+
+  <a href="#toggle" class="btn" id="key2">
+    <i class="icofont">&#xf1ef;</i>
+    icofont-key2
+  </a>
+
+  <a href="#toggle" class="btn" id="keyboard">
+    <i class="icofont">&#xf1f0;</i>
+    icofont-keyboard
+  </a>
+
+  <a href="#toggle" class="btn" id="lab">
+    <i class="icofont">&#xf1f1;</i>
+    icofont-lab
+  </a>
+
+  <a href="#toggle" class="btn" id="lanyrd">
+    <i class="icofont">&#xf1f2;</i>
+    icofont-lanyrd
+  </a>
+
+  <a href="#toggle" class="btn" id="laptop">
+    <i class="icofont">&#xf1f3;</i>
+    icofont-laptop
+  </a>
+
+  <a href="#toggle" class="btn" id="last">
+    <i class="icofont">&#xf1f4;</i>
+    icofont-last
+  </a>
+
+  <a href="#toggle" class="btn" id="lastfm">
+    <i class="icofont">&#xf1f5;</i>
+    icofont-lastfm
+  </a>
+
+  <a href="#toggle" class="btn" id="lastfm2">
+    <i class="icofont">&#xf1f6;</i>
+    icofont-lastfm2
+  </a>
+
+  <a href="#toggle" class="btn" id="leaf">
+    <i class="icofont">&#xf1f7;</i>
+    icofont-leaf
+  </a>
+
+  <a href="#toggle" class="btn" id="left-to-right">
+    <i class="icofont">&#xf1f8;</i>
+    icofont-left-to-right
+  </a>
+
+  <a href="#toggle" class="btn" id="library">
+    <i class="icofont">&#xf1f9;</i>
+    icofont-library
+  </a>
+
+  <a href="#toggle" class="btn" id="libreoffice">
+    <i class="icofont">&#xf1fa;</i>
+    icofont-libreoffice
+  </a>
+
+  <a href="#toggle" class="btn" id="lightning">
+    <i class="icofont">&#xf1fb;</i>
+    icofont-lightning
+  </a>
+
+  <a href="#toggle" class="btn" id="link">
+    <i class="icofont">&#xf1fc;</i>
+    icofont-link
+  </a>
+
+  <a href="#toggle" class="btn" id="linkedin">
+    <i class="icofont">&#xf1fd;</i>
+    icofont-linkedin
+  </a>
+
+  <a href="#toggle" class="btn" id="list">
+    <i class="icofont">&#xf1fe;</i>
+    icofont-list
+  </a>
+
+  <a href="#toggle" class="btn" id="list2">
+    <i class="icofont">&#xf1ff;</i>
+    icofont-list2
+  </a>
+
+  <a href="#toggle" class="btn" id="location">
+    <i class="icofont">&#xf200;</i>
+    icofont-location
+  </a>
+
+  <a href="#toggle" class="btn" id="location2">
+    <i class="icofont">&#xf201;</i>
+    icofont-location2
+  </a>
+
+  <a href="#toggle" class="btn" id="lock">
+    <i class="icofont">&#xf202;</i>
+    icofont-lock
+  </a>
+
+  <a href="#toggle" class="btn" id="lock2">
+    <i class="icofont">&#xf203;</i>
+    icofont-lock2
+  </a>
+
+  <a href="#toggle" class="btn" id="loop">
+    <i class="icofont">&#xf204;</i>
+    icofont-loop
+  </a>
+
+  <a href="#toggle" class="btn" id="loop2">
+    <i class="icofont">&#xf205;</i>
+    icofont-loop2
+  </a>
+
+  <a href="#toggle" class="btn" id="loop3">
+    <i class="icofont">&#xf206;</i>
+    icofont-loop3
+  </a>
+
+  <a href="#toggle" class="btn" id="magnet">
+    <i class="icofont">&#xf207;</i>
+    icofont-magnet
+  </a>
+
+  <a href="#toggle" class="btn" id="mail">
+    <i class="icofont">&#xf208;</i>
+    icofont-mail
+  </a>
+
+  <a href="#toggle" class="btn" id="mail2">
+    <i class="icofont">&#xf209;</i>
+    icofont-mail2
+  </a>
+
+  <a href="#toggle" class="btn" id="mail3">
+    <i class="icofont">&#xf20a;</i>
+    icofont-mail3
+  </a>
+
+  <a href="#toggle" class="btn" id="mail4">
+    <i class="icofont">&#xf20b;</i>
+    icofont-mail4
+  </a>
+
+  <a href="#toggle" class="btn" id="map">
+    <i class="icofont">&#xf20c;</i>
+    icofont-map
+  </a>
+
+  <a href="#toggle" class="btn" id="map2">
+    <i class="icofont">&#xf20d;</i>
+    icofont-map2
+  </a>
+
+  <a href="#toggle" class="btn" id="menu">
+    <i class="icofont">&#xf20e;</i>
+    icofont-menu
+  </a>
+
+  <a href="#toggle" class="btn" id="menu2">
+    <i class="icofont">&#xf20f;</i>
+    icofont-menu2
+  </a>
+
+  <a href="#toggle" class="btn" id="menu3">
+    <i class="icofont">&#xf210;</i>
+    icofont-menu3
+  </a>
+
+  <a href="#toggle" class="btn" id="meter">
+    <i class="icofont">&#xf211;</i>
+    icofont-meter
+  </a>
+
+  <a href="#toggle" class="btn" id="meter2">
+    <i class="icofont">&#xf212;</i>
+    icofont-meter2
+  </a>
+
+  <a href="#toggle" class="btn" id="minus">
+    <i class="icofont">&#xf213;</i>
+    icofont-minus
+  </a>
+
+  <a href="#toggle" class="btn" id="mobile">
+    <i class="icofont">&#xf214;</i>
+    icofont-mobile
+  </a>
+
+  <a href="#toggle" class="btn" id="mobile2">
+    <i class="icofont">&#xf215;</i>
+    icofont-mobile2
+  </a>
+
+  <a href="#toggle" class="btn" id="mug">
+    <i class="icofont">&#xf216;</i>
+    icofont-mug
+  </a>
+
+  <a href="#toggle" class="btn" id="music">
+    <i class="icofont">&#xf217;</i>
+    icofont-music
+  </a>
+
+  <a href="#toggle" class="btn" id="neutral">
+    <i class="icofont">&#xf218;</i>
+    icofont-neutral
+  </a>
+
+  <a href="#toggle" class="btn" id="neutral2">
+    <i class="icofont">&#xf219;</i>
+    icofont-neutral2
+  </a>
+
+  <a href="#toggle" class="btn" id="new-tab">
+    <i class="icofont">&#xf21a;</i>
+    icofont-new-tab
+  </a>
+
+  <a href="#toggle" class="btn" id="newspaper">
+    <i class="icofont">&#xf21b;</i>
+    icofont-newspaper
+  </a>
+
+  <a href="#toggle" class="btn" id="next">
+    <i class="icofont">&#xf21c;</i>
+    icofont-next
+  </a>
+
+  <a href="#toggle" class="btn" id="notebook">
+    <i class="icofont">&#xf21d;</i>
+    icofont-notebook
+  </a>
+
+  <a href="#toggle" class="btn" id="notification">
+    <i class="icofont">&#xf21e;</i>
+    icofont-notification
+  </a>
+
+  <a href="#toggle" class="btn" id="numbered-list">
+    <i class="icofont">&#xf21f;</i>
+    icofont-numbered-list
+  </a>
+
+  <a href="#toggle" class="btn" id="office">
+    <i class="icofont">&#xf220;</i>
+    icofont-office
+  </a>
+
+  <a href="#toggle" class="btn" id="omega">
+    <i class="icofont">&#xf221;</i>
+    icofont-omega
+  </a>
+
+  <a href="#toggle" class="btn" id="opera">
+    <i class="icofont">&#xf222;</i>
+    icofont-opera
+  </a>
+
+  <a href="#toggle" class="btn" id="pacman">
+    <i class="icofont">&#xf223;</i>
+    icofont-pacman
+  </a>
+
+  <a href="#toggle" class="btn" id="paint-format">
+    <i class="icofont">&#xf224;</i>
+    icofont-paint-format
+  </a>
+
+  <a href="#toggle" class="btn" id="paragraph-center">
+    <i class="icofont">&#xf225;</i>
+    icofont-paragraph-center
+  </a>
+
+  <a href="#toggle" class="btn" id="paragraph-center2">
+    <i class="icofont">&#xf226;</i>
+    icofont-paragraph-center2
+  </a>
+
+  <a href="#toggle" class="btn" id="paragraph-justify">
+    <i class="icofont">&#xf227;</i>
+    icofont-paragraph-justify
+  </a>
+
+  <a href="#toggle" class="btn" id="paragraph-justify2">
+    <i class="icofont">&#xf228;</i>
+    icofont-paragraph-justify2
+  </a>
+
+  <a href="#toggle" class="btn" id="paragraph-left">
+    <i class="icofont">&#xf229;</i>
+    icofont-paragraph-left
+  </a>
+
+  <a href="#toggle" class="btn" id="paragraph-left2">
+    <i class="icofont">&#xf22a;</i>
+    icofont-paragraph-left2
+  </a>
+
+  <a href="#toggle" class="btn" id="paragraph-right">
+    <i class="icofont">&#xf22b;</i>
+    icofont-paragraph-right
+  </a>
+
+  <a href="#toggle" class="btn" id="paragraph-right2">
+    <i class="icofont">&#xf22c;</i>
+    icofont-paragraph-right2
+  </a>
+
+  <a href="#toggle" class="btn" id="paste">
+    <i class="icofont">&#xf22d;</i>
+    icofont-paste
+  </a>
+
+  <a href="#toggle" class="btn" id="paste2">
+    <i class="icofont">&#xf22e;</i>
+    icofont-paste2
+  </a>
+
+  <a href="#toggle" class="btn" id="paste3">
+    <i class="icofont">&#xf22f;</i>
+    icofont-paste3
+  </a>
+
+  <a href="#toggle" class="btn" id="pause">
+    <i class="icofont">&#xf230;</i>
+    icofont-pause
+  </a>
+
+  <a href="#toggle" class="btn" id="pause2">
+    <i class="icofont">&#xf231;</i>
+    icofont-pause2
+  </a>
+
+  <a href="#toggle" class="btn" id="pawn">
+    <i class="icofont">&#xf232;</i>
+    icofont-pawn
+  </a>
+
+  <a href="#toggle" class="btn" id="paypal">
+    <i class="icofont">&#xf233;</i>
+    icofont-paypal
+  </a>
+
+  <a href="#toggle" class="btn" id="paypal2">
+    <i class="icofont">&#xf234;</i>
+    icofont-paypal2
+  </a>
+
+  <a href="#toggle" class="btn" id="paypal3">
+    <i class="icofont">&#xf235;</i>
+    icofont-paypal3
+  </a>
+
+  <a href="#toggle" class="btn" id="pen">
+    <i class="icofont">&#xf236;</i>
+    icofont-pen
+  </a>
+
+  <a href="#toggle" class="btn" id="pencil">
+    <i class="icofont">&#xf237;</i>
+    icofont-pencil
+  </a>
+
+  <a href="#toggle" class="btn" id="pencil2">
+    <i class="icofont">&#xf238;</i>
+    icofont-pencil2
+  </a>
+
+  <a href="#toggle" class="btn" id="phone-hang-up">
+    <i class="icofont">&#xf239;</i>
+    icofont-phone-hang-up
+  </a>
+
+  <a href="#toggle" class="btn" id="phone">
+    <i class="icofont">&#xf23a;</i>
+    icofont-phone
+  </a>
+
+  <a href="#toggle" class="btn" id="picassa">
+    <i class="icofont">&#xf23b;</i>
+    icofont-picassa
+  </a>
+
+  <a href="#toggle" class="btn" id="picassa2">
+    <i class="icofont">&#xf23c;</i>
+    icofont-picassa2
+  </a>
+
+  <a href="#toggle" class="btn" id="pie">
+    <i class="icofont">&#xf23d;</i>
+    icofont-pie
+  </a>
+
+  <a href="#toggle" class="btn" id="pilcrow">
+    <i class="icofont">&#xf23e;</i>
+    icofont-pilcrow
+  </a>
+
+  <a href="#toggle" class="btn" id="pinterest">
+    <i class="icofont">&#xf23f;</i>
+    icofont-pinterest
+  </a>
+
+  <a href="#toggle" class="btn" id="pinterest2">
+    <i class="icofont">&#xf240;</i>
+    icofont-pinterest2
+  </a>
+
+  <a href="#toggle" class="btn" id="play">
+    <i class="icofont">&#xf241;</i>
+    icofont-play
+  </a>
+
+  <a href="#toggle" class="btn" id="play2">
+    <i class="icofont">&#xf242;</i>
+    icofont-play2
+  </a>
+
+  <a href="#toggle" class="btn" id="play3">
+    <i class="icofont">&#xf243;</i>
+    icofont-play3
+  </a>
+
+  <a href="#toggle" class="btn" id="plus">
+    <i class="icofont">&#xf244;</i>
+    icofont-plus
+  </a>
+
+  <a href="#toggle" class="btn" id="podcast">
+    <i class="icofont">&#xf245;</i>
+    icofont-podcast
+  </a>
+
+  <a href="#toggle" class="btn" id="point-down">
+    <i class="icofont">&#xf246;</i>
+    icofont-point-down
+  </a>
+
+  <a href="#toggle" class="btn" id="point-left">
+    <i class="icofont">&#xf247;</i>
+    icofont-point-left
+  </a>
+
+  <a href="#toggle" class="btn" id="point-right">
+    <i class="icofont">&#xf248;</i>
+    icofont-point-right
+  </a>
+
+  <a href="#toggle" class="btn" id="point-up">
+    <i class="icofont">&#xf249;</i>
+    icofont-point-up
+  </a>
+
+  <a href="#toggle" class="btn" id="power-cord">
+    <i class="icofont">&#xf24a;</i>
+    icofont-power-cord
+  </a>
+
+  <a href="#toggle" class="btn" id="previous">
+    <i class="icofont">&#xf24b;</i>
+    icofont-previous
+  </a>
+
+  <a href="#toggle" class="btn" id="print">
+    <i class="icofont">&#xf24c;</i>
+    icofont-print
+  </a>
+
+  <a href="#toggle" class="btn" id="profile">
+    <i class="icofont">&#xf24d;</i>
+    icofont-profile
+  </a>
+
+  <a href="#toggle" class="btn" id="pushpin">
+    <i class="icofont">&#xf24e;</i>
+    icofont-pushpin
+  </a>
+
+  <a href="#toggle" class="btn" id="qrcode">
+    <i class="icofont">&#xf24f;</i>
+    icofont-qrcode
+  </a>
+
+  <a href="#toggle" class="btn" id="question">
+    <i class="icofont">&#xf250;</i>
+    icofont-question
+  </a>
+
+  <a href="#toggle" class="btn" id="quill">
+    <i class="icofont">&#xf251;</i>
+    icofont-quill
+  </a>
+
+  <a href="#toggle" class="btn" id="quotes-left">
+    <i class="icofont">&#xf252;</i>
+    icofont-quotes-left
+  </a>
+
+  <a href="#toggle" class="btn" id="radio-checked">
+    <i class="icofont">&#xf253;</i>
+    icofont-radio-checked
+  </a>
+
+  <a href="#toggle" class="btn" id="radio-unchecked">
+    <i class="icofont">&#xf254;</i>
+    icofont-radio-unchecked
+  </a>
+
+  <a href="#toggle" class="btn" id="reddit">
+    <i class="icofont">&#xf255;</i>
+    icofont-reddit
+  </a>
+
+  <a href="#toggle" class="btn" id="redo">
+    <i class="icofont">&#xf256;</i>
+    icofont-redo
+  </a>
+
+  <a href="#toggle" class="btn" id="redo2">
+    <i class="icofont">&#xf257;</i>
+    icofont-redo2
+  </a>
+
+  <a href="#toggle" class="btn" id="remove">
+    <i class="icofont">&#xf258;</i>
+    icofont-remove
+  </a>
+
+  <a href="#toggle" class="btn" id="remove2">
+    <i class="icofont">&#xf259;</i>
+    icofont-remove2
+  </a>
+
+  <a href="#toggle" class="btn" id="reply">
+    <i class="icofont">&#xf25a;</i>
+    icofont-reply
+  </a>
+
+  <a href="#toggle" class="btn" id="right-to-left">
+    <i class="icofont">&#xf25b;</i>
+    icofont-right-to-left
+  </a>
+
+  <a href="#toggle" class="btn" id="road">
+    <i class="icofont">&#xf25c;</i>
+    icofont-road
+  </a>
+
+  <a href="#toggle" class="btn" id="rocket">
+    <i class="icofont">&#xf25d;</i>
+    icofont-rocket
+  </a>
+
+  <a href="#toggle" class="btn" id="sad">
+    <i class="icofont">&#xf25e;</i>
+    icofont-sad
+  </a>
+
+  <a href="#toggle" class="btn" id="sad2">
+    <i class="icofont">&#xf25f;</i>
+    icofont-sad2
+  </a>
+
+  <a href="#toggle" class="btn" id="safari">
+    <i class="icofont">&#xf260;</i>
+    icofont-safari
+  </a>
+
+  <a href="#toggle" class="btn" id="scissors">
+    <i class="icofont">&#xf261;</i>
+    icofont-scissors
+  </a>
+
+  <a href="#toggle" class="btn" id="screen">
+    <i class="icofont">&#xf262;</i>
+    icofont-screen
+  </a>
+
+  <a href="#toggle" class="btn" id="search">
+    <i class="icofont">&#xf263;</i>
+    icofont-search
+  </a>
+
+  <a href="#toggle" class="btn" id="settings">
+    <i class="icofont">&#xf264;</i>
+    icofont-settings
+  </a>
+
+  <a href="#toggle" class="btn" id="share">
+    <i class="icofont">&#xf265;</i>
+    icofont-share
+  </a>
+
+  <a href="#toggle" class="btn" id="shield">
+    <i class="icofont">&#xf266;</i>
+    icofont-shield
+  </a>
+
+  <a href="#toggle" class="btn" id="shocked">
+    <i class="icofont">&#xf267;</i>
+    icofont-shocked
+  </a>
+
+  <a href="#toggle" class="btn" id="shocked2">
+    <i class="icofont">&#xf268;</i>
+    icofont-shocked2
+  </a>
+
+  <a href="#toggle" class="btn" id="shuffle">
+    <i class="icofont">&#xf269;</i>
+    icofont-shuffle
+  </a>
+
+  <a href="#toggle" class="btn" id="sigma">
+    <i class="icofont">&#xf26a;</i>
+    icofont-sigma
+  </a>
+
+  <a href="#toggle" class="btn" id="signup">
+    <i class="icofont">&#xf26b;</i>
+    icofont-signup
+  </a>
+
+  <a href="#toggle" class="btn" id="skype">
+    <i class="icofont">&#xf26c;</i>
+    icofont-skype
+  </a>
+
+  <a href="#toggle" class="btn" id="smiley">
+    <i class="icofont">&#xf26d;</i>
+    icofont-smiley
+  </a>
+
+  <a href="#toggle" class="btn" id="smiley2">
+    <i class="icofont">&#xf26e;</i>
+    icofont-smiley2
+  </a>
+
+  <a href="#toggle" class="btn" id="soundcloud">
+    <i class="icofont">&#xf26f;</i>
+    icofont-soundcloud
+  </a>
+
+  <a href="#toggle" class="btn" id="soundcloud2">
+    <i class="icofont">&#xf270;</i>
+    icofont-soundcloud2
+  </a>
+
+  <a href="#toggle" class="btn" id="spades">
+    <i class="icofont">&#xf271;</i>
+    icofont-spades
+  </a>
+
+  <a href="#toggle" class="btn" id="spam">
+    <i class="icofont">&#xf272;</i>
+    icofont-spam
+  </a>
+
+  <a href="#toggle" class="btn" id="spell-check">
+    <i class="icofont">&#xf273;</i>
+    icofont-spell-check
+  </a>
+
+  <a href="#toggle" class="btn" id="spinner">
+    <i class="icofont">&#xf274;</i>
+    icofont-spinner
+  </a>
+
+  <a href="#toggle" class="btn" id="spinner2">
+    <i class="icofont">&#xf275;</i>
+    icofont-spinner2
+  </a>
+
+  <a href="#toggle" class="btn" id="spinner3">
+    <i class="icofont">&#xf276;</i>
+    icofont-spinner3
+  </a>
+
+  <a href="#toggle" class="btn" id="spinner4">
+    <i class="icofont">&#xf277;</i>
+    icofont-spinner4
+  </a>
+
+  <a href="#toggle" class="btn" id="spinner5">
+    <i class="icofont">&#xf278;</i>
+    icofont-spinner5
+  </a>
+
+  <a href="#toggle" class="btn" id="spinner6">
+    <i class="icofont">&#xf279;</i>
+    icofont-spinner6
+  </a>
+
+  <a href="#toggle" class="btn" id="stack">
+    <i class="icofont">&#xf27a;</i>
+    icofont-stack
+  </a>
+
+  <a href="#toggle" class="btn" id="stackoverflow">
+    <i class="icofont">&#xf27b;</i>
+    icofont-stackoverflow
+  </a>
+
+  <a href="#toggle" class="btn" id="star">
+    <i class="icofont">&#xf27c;</i>
+    icofont-star
+  </a>
+
+  <a href="#toggle" class="btn" id="star2">
+    <i class="icofont">&#xf27d;</i>
+    icofont-star2
+  </a>
+
+  <a href="#toggle" class="btn" id="star3">
+    <i class="icofont">&#xf27e;</i>
+    icofont-star3
+  </a>
+
+  <a href="#toggle" class="btn" id="stats">
+    <i class="icofont">&#xf27f;</i>
+    icofont-stats
+  </a>
+
+  <a href="#toggle" class="btn" id="steam">
+    <i class="icofont">&#xf280;</i>
+    icofont-steam
+  </a>
+
+  <a href="#toggle" class="btn" id="steam2">
+    <i class="icofont">&#xf281;</i>
+    icofont-steam2
+  </a>
+
+  <a href="#toggle" class="btn" id="stop">
+    <i class="icofont">&#xf282;</i>
+    icofont-stop
+  </a>
+
+  <a href="#toggle" class="btn" id="stop2">
+    <i class="icofont">&#xf283;</i>
+    icofont-stop2
+  </a>
+
+  <a href="#toggle" class="btn" id="stopwatch">
+    <i class="icofont">&#xf284;</i>
+    icofont-stopwatch
+  </a>
+
+  <a href="#toggle" class="btn" id="storage">
+    <i class="icofont">&#xf285;</i>
+    icofont-storage
+  </a>
+
+  <a href="#toggle" class="btn" id="strikethrough">
+    <i class="icofont">&#xf286;</i>
+    icofont-strikethrough
+  </a>
+
+  <a href="#toggle" class="btn" id="stumbleupon">
+    <i class="icofont">&#xf287;</i>
+    icofont-stumbleupon
+  </a>
+
+  <a href="#toggle" class="btn" id="stumbleupon2">
+    <i class="icofont">&#xf288;</i>
+    icofont-stumbleupon2
+  </a>
+
+  <a href="#toggle" class="btn" id="support">
+    <i class="icofont">&#xf289;</i>
+    icofont-support
+  </a>
+
+  <a href="#toggle" class="btn" id="switch">
+    <i class="icofont">&#xf28a;</i>
+    icofont-switch
+  </a>
+
+  <a href="#toggle" class="btn" id="tab">
+    <i class="icofont">&#xf28b;</i>
+    icofont-tab
+  </a>
+
+  <a href="#toggle" class="btn" id="table">
+    <i class="icofont">&#xf28c;</i>
+    icofont-table
+  </a>
+
+  <a href="#toggle" class="btn" id="table2">
+    <i class="icofont">&#xf28d;</i>
+    icofont-table2
+  </a>
+
+  <a href="#toggle" class="btn" id="tablet">
+    <i class="icofont">&#xf28e;</i>
+    icofont-tablet
+  </a>
+
+  <a href="#toggle" class="btn" id="tag">
+    <i class="icofont">&#xf28f;</i>
+    icofont-tag
+  </a>
+
+  <a href="#toggle" class="btn" id="tags">
+    <i class="icofont">&#xf290;</i>
+    icofont-tags
+  </a>
+
+  <a href="#toggle" class="btn" id="target">
+    <i class="icofont">&#xf291;</i>
+    icofont-target
+  </a>
+
+  <a href="#toggle" class="btn" id="text-height">
+    <i class="icofont">&#xf292;</i>
+    icofont-text-height
+  </a>
+
+  <a href="#toggle" class="btn" id="text-width">
+    <i class="icofont">&#xf293;</i>
+    icofont-text-width
+  </a>
+
+  <a href="#toggle" class="btn" id="thumbs-up">
+    <i class="icofont">&#xf294;</i>
+    icofont-thumbs-up
+  </a>
+
+  <a href="#toggle" class="btn" id="thumbs-up2">
+    <i class="icofont">&#xf295;</i>
+    icofont-thumbs-up2
+  </a>
+
+  <a href="#toggle" class="btn" id="ticket">
+    <i class="icofont">&#xf296;</i>
+    icofont-ticket
+  </a>
+
+  <a href="#toggle" class="btn" id="tongue">
+    <i class="icofont">&#xf297;</i>
+    icofont-tongue
+  </a>
+
+  <a href="#toggle" class="btn" id="tongue2">
+    <i class="icofont">&#xf298;</i>
+    icofont-tongue2
+  </a>
+
+  <a href="#toggle" class="btn" id="tree">
+    <i class="icofont">&#xf299;</i>
+    icofont-tree
+  </a>
+
+  <a href="#toggle" class="btn" id="trophy">
+    <i class="icofont">&#xf29a;</i>
+    icofont-trophy
+  </a>
+
+  <a href="#toggle" class="btn" id="truck">
+    <i class="icofont">&#xf29b;</i>
+    icofont-truck
+  </a>
+
+  <a href="#toggle" class="btn" id="tumblr">
+    <i class="icofont">&#xf29c;</i>
+    icofont-tumblr
+  </a>
+
+  <a href="#toggle" class="btn" id="tumblr2">
+    <i class="icofont">&#xf29d;</i>
+    icofont-tumblr2
+  </a>
+
+  <a href="#toggle" class="btn" id="tux">
+    <i class="icofont">&#xf29e;</i>
+    icofont-tux
+  </a>
+
+  <a href="#toggle" class="btn" id="tv">
+    <i class="icofont">&#xf29f;</i>
+    icofont-tv
+  </a>
+
+  <a href="#toggle" class="btn" id="twitter">
+    <i class="icofont">&#xf2a0;</i>
+    icofont-twitter
+  </a>
+
+  <a href="#toggle" class="btn" id="twitter2">
+    <i class="icofont">&#xf2a1;</i>
+    icofont-twitter2
+  </a>
+
+  <a href="#toggle" class="btn" id="twitter3">
+    <i class="icofont">&#xf2a2;</i>
+    icofont-twitter3
+  </a>
+
+  <a href="#toggle" class="btn" id="underline">
+    <i class="icofont">&#xf2a3;</i>
+    icofont-underline
+  </a>
+
+  <a href="#toggle" class="btn" id="undo">
+    <i class="icofont">&#xf2a4;</i>
+    icofont-undo
+  </a>
+
+  <a href="#toggle" class="btn" id="undo2">
+    <i class="icofont">&#xf2a5;</i>
+    icofont-undo2
+  </a>
+
+  <a href="#toggle" class="btn" id="unlocked">
+    <i class="icofont">&#xf2a6;</i>
+    icofont-unlocked
+  </a>
+
+  <a href="#toggle" class="btn" id="upload">
+    <i class="icofont">&#xf2a7;</i>
+    icofont-upload
+  </a>
+
+  <a href="#toggle" class="btn" id="upload2">
+    <i class="icofont">&#xf2a8;</i>
+    icofont-upload2
+  </a>
+
+  <a href="#toggle" class="btn" id="upload3">
+    <i class="icofont">&#xf2a9;</i>
+    icofont-upload3
+  </a>
+
+  <a href="#toggle" class="btn" id="user">
+    <i class="icofont">&#xf2aa;</i>
+    icofont-user
+  </a>
+
+  <a href="#toggle" class="btn" id="user2">
+    <i class="icofont">&#xf2ab;</i>
+    icofont-user2
+  </a>
+
+  <a href="#toggle" class="btn" id="user3">
+    <i class="icofont">&#xf2ac;</i>
+    icofont-user3
+  </a>
+
+  <a href="#toggle" class="btn" id="user4">
+    <i class="icofont">&#xf2ad;</i>
+    icofont-user4
+  </a>
+
+  <a href="#toggle" class="btn" id="users">
+    <i class="icofont">&#xf2ae;</i>
+    icofont-users
+  </a>
+
+  <a href="#toggle" class="btn" id="users2">
+    <i class="icofont">&#xf2af;</i>
+    icofont-users2
+  </a>
+
+  <a href="#toggle" class="btn" id="vimeo">
+    <i class="icofont">&#xf2b0;</i>
+    icofont-vimeo
+  </a>
+
+  <a href="#toggle" class="btn" id="vimeo2">
+    <i class="icofont">&#xf2b1;</i>
+    icofont-vimeo2
+  </a>
+
+  <a href="#toggle" class="btn" id="vimeo3">
+    <i class="icofont">&#xf2b2;</i>
+    icofont-vimeo3
+  </a>
+
+  <a href="#toggle" class="btn" id="volume-decrease">
+    <i class="icofont">&#xf2b3;</i>
+    icofont-volume-decrease
+  </a>
+
+  <a href="#toggle" class="btn" id="volume-high">
+    <i class="icofont">&#xf2b4;</i>
+    icofont-volume-high
+  </a>
+
+  <a href="#toggle" class="btn" id="volume-increase">
+    <i class="icofont">&#xf2b5;</i>
+    icofont-volume-increase
+  </a>
+
+  <a href="#toggle" class="btn" id="volume-low">
+    <i class="icofont">&#xf2b6;</i>
+    icofont-volume-low
+  </a>
+
+  <a href="#toggle" class="btn" id="volume-medium">
+    <i class="icofont">&#xf2b7;</i>
+    icofont-volume-medium
+  </a>
+
+  <a href="#toggle" class="btn" id="volume-mute">
+    <i class="icofont">&#xf2b8;</i>
+    icofont-volume-mute
+  </a>
+
+  <a href="#toggle" class="btn" id="volume-mute2">
+    <i class="icofont">&#xf2b9;</i>
+    icofont-volume-mute2
+  </a>
+
+  <a href="#toggle" class="btn" id="wand">
+    <i class="icofont">&#xf2ba;</i>
+    icofont-wand
+  </a>
+
+  <a href="#toggle" class="btn" id="warning">
+    <i class="icofont">&#xf2bb;</i>
+    icofont-warning
+  </a>
+
+  <a href="#toggle" class="btn" id="windows">
+    <i class="icofont">&#xf2bc;</i>
+    icofont-windows
+  </a>
+
+  <a href="#toggle" class="btn" id="windows8">
+    <i class="icofont">&#xf2bd;</i>
+    icofont-windows8
+  </a>
+
+  <a href="#toggle" class="btn" id="wink">
+    <i class="icofont">&#xf2be;</i>
+    icofont-wink
+  </a>
+
+  <a href="#toggle" class="btn" id="wink2">
+    <i class="icofont">&#xf2bf;</i>
+    icofont-wink2
+  </a>
+
+  <a href="#toggle" class="btn" id="wondering">
+    <i class="icofont">&#xf2c0;</i>
+    icofont-wondering
+  </a>
+
+  <a href="#toggle" class="btn" id="wondering2">
+    <i class="icofont">&#xf2c1;</i>
+    icofont-wondering2
+  </a>
+
+  <a href="#toggle" class="btn" id="wordpress">
+    <i class="icofont">&#xf2c2;</i>
+    icofont-wordpress
+  </a>
+
+  <a href="#toggle" class="btn" id="wordpress2">
+    <i class="icofont">&#xf2c3;</i>
+    icofont-wordpress2
+  </a>
+
+  <a href="#toggle" class="btn" id="wrench">
+    <i class="icofont">&#xf2c4;</i>
+    icofont-wrench
+  </a>
+
+  <a href="#toggle" class="btn" id="xing">
+    <i class="icofont">&#xf2c5;</i>
+    icofont-xing
+  </a>
+
+  <a href="#toggle" class="btn" id="xing2">
+    <i class="icofont">&#xf2c6;</i>
+    icofont-xing2
+  </a>
+
+  <a href="#toggle" class="btn" id="yahoo">
+    <i class="icofont">&#xf2c7;</i>
+    icofont-yahoo
+  </a>
+
+  <a href="#toggle" class="btn" id="yelp">
+    <i class="icofont">&#xf2c8;</i>
+    icofont-yelp
+  </a>
+
+  <a href="#toggle" class="btn" id="youtube">
+    <i class="icofont">&#xf2c9;</i>
+    icofont-youtube
+  </a>
+
+  <a href="#toggle" class="btn" id="youtube2">
+    <i class="icofont">&#xf2ca;</i>
+    icofont-youtube2
+  </a>
+
+  <a href="#toggle" class="btn" id="zoom-in">
+    <i class="icofont">&#xf2cb;</i>
+    icofont-zoom-in
+  </a>
+
+  <a href="#toggle" class="btn" id="zoom-out">
+    <i class="icofont">&#xf2cc;</i>
+    icofont-zoom-out
   </a>
 
 </div>
