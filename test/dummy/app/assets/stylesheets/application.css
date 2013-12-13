@@ -11,3 +11,35 @@
  *= require_self
  *= require_tree .
  */
+
+
+@font-face {
+  font-family: "icofont";
+  src: url(<%= asset_path "icofont/icofont1.svg#icofont" %>) format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[data-icon]:before { content: attr(data-icon); }
+
+[data-icon]:before,
+.icofont-accessibility:before,
+.icofont-alarm:before,
+.icofont-alarm2:before,
+.icofont-android:before {
+  display: inline-block;
+  font-family: "icofont";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+.icofont-accessibility:before { content: "\f100"; }
+.icofont-alarm:before { content: "\f101"; }
+.icofont-alarm2:before { content: "\f102"; }
+.icofont-android:before { content: "\f103"; }
