@@ -5,8 +5,6 @@ require 'fontcustom'
 
 module Icofont
 	class FontProcessor
-		FONT_NAME = 'icofont'
-
 		def initialize(icons)
 			@icons = icons
 		end
@@ -40,7 +38,7 @@ module Icofont
 
 		def with_glyphs
 			tmp_dir = Dir.mktmpdir
-			files = @icons.map { |icon| File.join(all_icons_path, "#{icon}.svg") }
+			files = @icons.map { |icon| File.join(Paths.svg_path, "#{icon}.svg") }
 			FileUtils.cp files, tmp_dir
 			yield tmp_dir
 			FileUtils.rm_rf tmp_dir
@@ -50,6 +48,5 @@ module Icofont
 			FileUtils.rm_r(folder_path) if Dir.exists?(folder_path)
 			Dir.mkdir folder_path
 		end
-
 	end
 end

@@ -16,6 +16,10 @@ module Icofont
 			def glyphs_path
 				@@glyphs_path ||= File.join(Rails.root, ".#{FONT_NAME}/#{FONT_NAME}.txt")
 			end
+
+			def svg_path
+				@@svg_path ||= File.expand_path(".#{FONT_NAME}/glyphs", '~')
+			end
 		end
 	end
 end
