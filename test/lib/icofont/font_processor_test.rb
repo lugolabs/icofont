@@ -6,12 +6,4 @@ module Icofont
       
     end
   end
-
-  class PathsHolderMock
-    class << self
-      def templates_path
-        
-      end
-    end
-  end
 end

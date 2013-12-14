@@ -7,13 +7,13 @@ module Icofont
 	class FontProcessor
 		FONT_NAME = 'icofont'
 
-		def initialize(icons, PathsHolder = Paths)
+		def initialize(icons)
 			@icons = icons
 		end
 
 		def generate
 			with_glyphs do |tmp_dir|
-				clean_dir PathsHolder.output_path
+				clean_dir Paths.output_path
 				generate_vectors tmp_dir
 			end
 		end
@@ -24,13 +24,13 @@ module Icofont
 			options = {
         # debug: 			true,
 				input:      vectors_path, 
-				output:     PathsHolder.output_path,
-				templates:  [PathsHolder.templates_path],
+				output:     Paths.output_path,
+				templates:  [Paths.templates_path],
 				font_name:  FONT_NAME,
 				css_prefix: "#{FONT_NAME}-",
     		no_hash: 		true,
 				verbose:    true,
-				manifest:   PathsHolder.manifest_path, 
+				manifest:   Paths.manifest_path, 
 			}
 
 			opts = Fontcustom::Options.new(options)
