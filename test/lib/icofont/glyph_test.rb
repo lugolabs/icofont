@@ -2,34 +2,19 @@ require 'test_helper'
 
 module Icofont
 	class GlyphTest < ActiveSupport::TestCase
-		def test_fetches_data
-			Glyph.set_data_path data_path
-			glyphs = Glyph.fetch
-			assert_equal 3, glyphs.size, 'size'
-			assert_equal 'icofont-home', glyphs[0].css_class, 'css_class'
-			assert_equal '&#xe000;', glyphs[0].unicode, 'unicode'
+		setup do
+			@glyphs_path = File.expand_path("../../../fixtures/icofont.txt", __FILE__)
 		end
 
-		# def test_fetches_data
-		# 	glyph.store(['icofont-pencil', 'icofont-home', 'icofont-home-1'])
-		# 	data = glyph.fetch
-		# 	assert_equal 3, data.size, 'size'
-		# 	assert_equal "icofont-pencil", data[0], 'first'
-		# end
+		test "it stores and fetches glyphs" do
+			Glyph.store %w(home), @glyphs_path
+			data = Glyph.fetch @glyphs_path
+			assert_equal 'home', data[0], 'first'
 
-		# def test_stores_data
-		# 	glyph.store(['icofont-pencil'])
-		# 	data = glyph.fetch
-		# 	# assert_equal 1, 'size after'
-		# 	assert_equal 'icofont-pencil', data[0]
-		# end
-
-		# def glyph
-		# 	Glyph.new(data_path)
-		# end
-
-		def data_path
-			File.expand_path '../../../fixtures/icofonts.txt', __FILE__
+			Glyph.store %w(pencil aid), @glyphs_path
+			data = Glyph.fetch @glyphs_path
+			assert_equal 'pencil', data[0], 'second 1'
+			assert_equal 'aid', data[1], 'second 2'
 		end
 	end
 end
