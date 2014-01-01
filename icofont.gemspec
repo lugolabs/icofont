@@ -10,6 +10,7 @@ Gem::Specification.new do |s|
   s.authors     = ["Artan Sinani"]
   s.email       = ["artisinani@gmail.com"]
   s.homepage    = "http://lugolabs.com"
+  s.license     = "MIT"
   s.summary     = "Manage your icon fonts assets inside your application"
   s.description = "Provides a web interface to a large collection of free icon fonts, so that you can inlcude only the fonts you need in your application."
 
@@ -20,5 +21,5 @@ Gem::Specification.new do |s|
   s.add_dependency "fontcustom"
 
   s.add_development_dependency "sqlite3"
-  # s.add_development_dependency "jquery"
+  s.add_development_dependency "jquery"
 end
