@@ -1,19 +1,15 @@
 {
   "fonts": [
-    "/Users/arti/ror/icofont/icofont/test/dummy/app/assets/icofont/icofont.ttf",
-    "/Users/arti/ror/icofont/icofont/test/dummy/app/assets/icofont/icofont.woff",
-    "/Users/arti/ror/icofont/icofont/test/dummy/app/assets/icofont/icofont.eot",
-    "/Users/arti/ror/icofont/icofont/test/dummy/app/assets/icofont/icofont.svg"
+    "/Users/artansinani/ror/icofont/icofont/test/dummy/app/assets/icofont/icofont.ttf",
+    "/Users/artansinani/ror/icofont/icofont/test/dummy/app/assets/icofont/icofont.woff",
+    "/Users/artansinani/ror/icofont/icofont/test/dummy/app/assets/icofont/icofont.eot",
+    "/Users/artansinani/ror/icofont/icofont/test/dummy/app/assets/icofont/icofont.svg"
   ],
   "templates": [
-    "/Users/arti/ror/icofont/icofont/test/dummy/app/assets/icofont/icofont.css.erb"
+    "/Users/artansinani/ror/icofont/icofont/test/dummy/app/assets/icofont/icofont.css.erb"
   ],
   "glyphs": [
-    "alarm",
-    "alarm2",
-    "angry",
-    "angry2",
-    "apple",
-    "arrow-down-left"
+    "accessibility",
+    "address-book"
   ]
 }

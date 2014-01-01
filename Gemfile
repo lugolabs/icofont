@@ -13,3 +13,6 @@ gemspec
 # To use debugger
 # gem 'debugger'
 gem 'jquery-rails'
+gem 'sqlite3'
+
+gem 'mocha', :group => :test, :require => false

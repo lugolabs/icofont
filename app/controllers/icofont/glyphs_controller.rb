@@ -7,13 +7,10 @@ module Icofont
     end
 
     def update
-      message = 'error'
-      if params[:glyphs]
-      	Glyph.store params[:glyphs]
-      	FontProcessor.new(params[:glyphs]).generate
-        message = 'success'
-      end
-    	render :json => { message: message }
+      glyphs = params[:glyphs] || []
+      Glyph.store glyphs
+      FontProcessor.new(glyphs).generate
+      render :json => { message: 'success' }
     end
   end
 end

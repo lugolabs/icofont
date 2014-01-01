@@ -1,0 +1,15 @@
+{
+  "fonts": [
+    "/Users/artansinani/ror/icofont/icofont/test/fixtures/fonts/icofont.ttf",
+    "/Users/artansinani/ror/icofont/icofont/test/fixtures/fonts/icofont.woff",
+    "/Users/artansinani/ror/icofont/icofont/test/fixtures/fonts/icofont.eot",
+    "/Users/artansinani/ror/icofont/icofont/test/fixtures/fonts/icofont.svg"
+  ],
+  "templates": [
+    "/Users/artansinani/ror/icofont/icofont/test/fixtures/fonts/icofont.css.erb"
+  ],
+  "glyphs": [
+    "home",
+    "home2"
+  ]
+}

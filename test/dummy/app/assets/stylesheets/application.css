@@ -11,3 +11,20 @@
  *= require_self
  *= require_tree .
  */
+
+ body {
+	font: 100%/1 sans-serif;
+}
+
+.icon {
+	display: inline-block;
+	margin: 0 1em 1em 0;
+	text-align: center;
+}
+
+.icon span {
+	color: #F560A1;
+	font-size: 2em;
+	display: block;
+	margin-bottom: .4em;
+}

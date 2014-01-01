@@ -5,7 +5,7 @@
 -->
 <svg xmlns="http://www.w3.org/2000/svg">
 <metadata>
-Created by FontForge 20120731 at Wed Jan  1 19:27:43 2014
+Created by FontForge 20120731 at Wed Jan  1 19:18:47 2014
  By Artan Sinani
 Created by Artan Sinani with FontForge 2.0 (http://fontforge.sf.net)
 </metadata>
@@ -19,16 +19,15 @@ Created by Artan Sinani with FontForge 2.0 (http://fontforge.sf.net)
     panose-1="2 0 6 9 0 0 0 0 0 0"
     ascent="448"
     descent="-64"
-    bbox="0 -64 512 448"
+    bbox="0 -32 512 432.509"
     underline-thickness="25.6"
     underline-position="-51.2"
     unicode-range="U+F100-F101"
   />
     <missing-glyph />
     <glyph glyph-name="uniF100" unicode="&#xf100;" 
-d="M480 352l-160 -64v-128l64 -224h-32l-96 224l-96 -224h-32l64 224v128l-160 64v32l224 -64l224 64v-32zM208 400c0 26.4961 21.5039 48 48 48s48 -21.5039 48 -48s-21.5039 -48 -48 -48s-48 21.5039 -48 48z" />
+d="M512 152.778l-256 198.713l-256 -198.714v81.0186l256 198.713l256 -198.714v-81.0166zM448 160v-192h-128v128h-128v-128h-128v192l192 144z" />
     <glyph glyph-name="uniF101" unicode="&#xf101;" 
-d="M480 320h-32v-32h64v-64c0 -17.6729 -14.3271 -32 -32 -32h-32v-32h64v-64c0 -17.6729 -14.3271 -32 -32 -32h-32v-128h-416c-17.6016 0 -32 14.4004 -32 32v448c0 17.6006 14.4004 32 32 32h416v-32h64v-64c0 -17.6729 -14.3271 -32 -32 -32zM288 319.835
-c-35.2549 0 -63.835 -28.5801 -63.835 -63.835s28.5801 -63.835 63.835 -63.835s63.835 28.5801 63.835 63.835s-28.5801 63.835 -63.835 63.835zM128 -32v448h-32v-448h32zM384 64v32c0 35.3467 -28.6523 64 -64 64h-64v0c-35.3457 0 -64 -28.6533 -64 -64v-32h192z" />
+d="M512 144v-16h-64v-160h-160v96h-64v-96h-160v160h-64v16l256 256l96 -96v80h64v-144z" />
   </font>
 </defs></svg>

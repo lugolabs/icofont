@@ -1,6 +1,2 @@
-apple
-arrow-down-left
-angry2
-angry
-alarm2
-alarm
+accessibility
+address-book
