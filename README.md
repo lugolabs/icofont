@@ -1,6 +1,8 @@
-# ![](http://lugolabs.com/static/icofont_logo.png)
+# ![Icofont](http://lugolabs.com/static/icofont_logo.png)
 
 Provides a web interface to a large collection of free icon fonts, so that you can inlcude only the fonts you need in your application.
+
+![Icofont front](http://lugolabs.com/static/icofont_front.png)
 
 ### Dependencies
 
