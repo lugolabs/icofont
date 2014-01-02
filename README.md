@@ -2,8 +2,6 @@
 
 Provides a web interface to a large collection of free icon fonts, so that you can inlcude only the fonts you need in your application.
 
-![Icofont front](http://lugolabs.com/static/icofont_front.png)
-
 ### Dependencies
 
 Icofont depends on the awsome [fontcustom]() for building the fonts. Please check their README for instructions on how to install it.
@@ -23,6 +21,8 @@ bundle install
 ```
 
 ### Usage
+
+![Icofont front](http://lugolabs.com/static/icofont_front.png)
 
 **1.** Start by running the `icofont` generator, which will copy the SVG glyphs from the [icofont-glyphs] repository into your machine, usually at `~/.icofont/glyphs`:
 
