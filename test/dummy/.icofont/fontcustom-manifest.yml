@@ -1,15 +1,16 @@
 {
   "fonts": [
-    "/Users/artansinani/ror/icofont/icofont/test/dummy/app/assets/icofont/icofont.ttf",
-    "/Users/artansinani/ror/icofont/icofont/test/dummy/app/assets/icofont/icofont.woff",
-    "/Users/artansinani/ror/icofont/icofont/test/dummy/app/assets/icofont/icofont.eot",
-    "/Users/artansinani/ror/icofont/icofont/test/dummy/app/assets/icofont/icofont.svg"
+    "/Users/arti/ror/icofont/icofont/test/dummy/app/assets/icofont/icofont.ttf",
+    "/Users/arti/ror/icofont/icofont/test/dummy/app/assets/icofont/icofont.woff",
+    "/Users/arti/ror/icofont/icofont/test/dummy/app/assets/icofont/icofont.eot",
+    "/Users/arti/ror/icofont/icofont/test/dummy/app/assets/icofont/icofont.svg"
   ],
   "templates": [
-    "/Users/artansinani/ror/icofont/icofont/test/dummy/app/assets/icofont/icofont.css.erb"
+    "/Users/arti/ror/icofont/icofont/test/dummy/app/assets/icofont/icofont.css.erb"
   ],
   "glyphs": [
     "accessibility",
-    "address-book"
+    "address-book",
+    "aid"
   ]
 }
