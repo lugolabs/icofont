@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.version     = Icofont::VERSION
   s.authors     = ["Artan Sinani"]
   s.email       = ["artisinani@gmail.com"]
-  s.homepage    = "http://lugolabs.com"
+  s.homepage    = "https://github.com/lugolabs/icofont"
   s.license     = "MIT"
   s.summary     = "Manage your icon fonts assets inside your application"
   s.description = "Provides a web interface to a large collection of free icon fonts, so that you can inlcude only the fonts you need in your application."
@@ -17,7 +17,7 @@ Gem::Specification.new do |s|
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
   s.test_files = Dir["test/**/*"]
 
-  s.add_dependency "rails", "~> 4.0.0"
+  s.add_dependency "rails", "~> 4.0", ">= 4.0.0"
   s.add_dependency "fontcustom"
 
   s.add_development_dependency "sqlite3"
