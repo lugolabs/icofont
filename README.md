@@ -40,7 +40,15 @@ end
 
 **3.** Now you can access the web interface of icofont at `/icofont` URL (e.g. `http://localhost:3000/icofont`). There you can select/unselect the glyphs you wish to be included on your font. Click on UPDATE to persist your changes, and create the font.
 
-The class names can be found below the fonts. Once the font is created, the selected class names are ready to use, on your pages.
+The class names can be found below the fonts.
+
+**4.** Make your the `icofont.css.erb` is included in your `application.css` file:
+
+```css
+*= require icofont
+```
+
+Once the font is created, the selected class names are ready to use, on your pages.
 
 This way you will include the icons you need on your font.
 
