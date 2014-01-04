@@ -24,24 +24,34 @@ module Icofont
 		private
 
 		def generate_vectors(vectors_path)
-			options = {
+			input = {
+				vectors:   vectors_path,
+				templates: Paths.templates_path
+			}
+
+			raw_options = {
         # debug: 			true,
-				input:      vectors_path, 
+				input:      input, 
 				output:     Paths.output_fonts_path,
-				templates:  [Paths.templates_path],
+				templates:  ["#{FONT_NAME}.css.erb"],
 				font_name:  FONT_NAME,
-				css_prefix: "#{FONT_NAME}-",
+				css_selector: ".#{FONT_NAME}-{{glyph}}",
     		no_hash: 		true,
 				verbose:    true,
 				manifest:   Paths.manifest_path
 			}
 
-			opts = Fontcustom::Options.new(options)
-			Fontcustom::Generator::Font.start [opts]
-      Fontcustom::Generator::Template.start [opts]
-
+     	run_generators raw_options
       move_css_to_output
 		end
+
+		def run_generators(raw_options)
+      options  = Fontcustom::Options.new(raw_options).options
+      manifest = Fontcustom::Manifest.new(Paths.manifest_path, options)
+
+      Fontcustom::Generator::Font.new(manifest.manifest).generate
+      Fontcustom::Generator::Template.new(manifest.manifest).generate
+    end
 
 		def move_css_to_output
       mv File.join(Paths.output_fonts_path, "#{FONT_NAME}.css.erb"), Paths.output_css_file_path
@@ -57,7 +67,6 @@ module Icofont
 
 		def clean_dir(folder_path)
 			rm_r(folder_path) if Dir.exists?(folder_path)
-			# Dir.mkdir folder_path
 			mkdir_p folder_path
 		end
 	end

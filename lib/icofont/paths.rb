@@ -2,7 +2,7 @@ module Icofont
 	class Paths
 		class << self
 			def templates_path
-				@@templates_path ||= File.expand_path("../templates/#{FONT_NAME}.css.erb", __FILE__)
+				@@templates_path ||= File.expand_path("../templates", __FILE__)
 			end
 
 			def output_fonts_path

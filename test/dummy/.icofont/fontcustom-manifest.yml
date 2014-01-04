@@ -1,16 +1,53 @@
 {
+  "checksum": {
+    "current": "",
+    "previous": ""
+  },
   "fonts": [
     "/Users/arti/ror/icofont/icofont/test/dummy/app/assets/icofont/icofont.ttf",
+    "/Users/arti/ror/icofont/icofont/test/dummy/app/assets/icofont/icofont.svg",
     "/Users/arti/ror/icofont/icofont/test/dummy/app/assets/icofont/icofont.woff",
-    "/Users/arti/ror/icofont/icofont/test/dummy/app/assets/icofont/icofont.eot",
-    "/Users/arti/ror/icofont/icofont/test/dummy/app/assets/icofont/icofont.svg"
+    "/Users/arti/ror/icofont/icofont/test/dummy/app/assets/icofont/icofont.eot"
   ],
+  "glyphs": {
+    "accessibility": {
+      "codepoint": 61696,
+      "source": "/var/folders/6m/t5fw0l811tl8ll9rbs7wvssm0000gn/T/d20140103-4999-13a9hey/accessibility.svg"
+    },
+    "address-book": {
+      "codepoint": 61697,
+      "source": "/var/folders/6m/t5fw0l811tl8ll9rbs7wvssm0000gn/T/d20140103-4999-13a9hey/address-book.svg"
+    },
+    "aid": {
+      "codepoint": 61698,
+      "source": "/var/folders/6m/t5fw0l811tl8ll9rbs7wvssm0000gn/T/d20140103-4999-13a9hey/aid.svg"
+    }
+  },
+  "options": {
+    "autowidth": false,
+    "config": false,
+    "css_selector": ".icofont-{{glyph}}",
+    "debug": false,
+    "font_name": "icofont",
+    "force": false,
+    "input": {
+      "templates": "/Users/arti/ror/icofont/icofont/lib/icofont/templates",
+      "vectors": "/var/folders/6m/t5fw0l811tl8ll9rbs7wvssm0000gn/T/d20140103-4999-13a9hey"
+    },
+    "no_hash": true,
+    "output": {
+      "css": "/Users/arti/ror/icofont/icofont/test/dummy/app/assets/icofont",
+      "fonts": "/Users/arti/ror/icofont/icofont/test/dummy/app/assets/icofont",
+      "preview": "/Users/arti/ror/icofont/icofont/test/dummy/app/assets/icofont"
+    },
+    "preprocessor_path": null,
+    "quiet": false,
+    "templates": [
+      "icofont.css.erb"
+    ],
+    "verbose": true
+  },
   "templates": [
     "/Users/arti/ror/icofont/icofont/test/dummy/app/assets/icofont/icofont.css.erb"
-  ],
-  "glyphs": [
-    "accessibility",
-    "address-book",
-    "aid"
   ]
 }

@@ -1,11 +1,11 @@
 <?xml version="1.0" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
 <!--
-2014-1-1: Created.
+2014-1-3: Created.
 -->
 <svg xmlns="http://www.w3.org/2000/svg">
 <metadata>
-Created by FontForge 20120731 at Wed Jan  1 19:18:47 2014
+Created by FontForge 20120731 at Fri Jan  3 22:01:27 2014
  By Artan Sinani
 Created by Artan Sinani with FontForge 2.0 (http://fontforge.sf.net)
 </metadata>
@@ -25,9 +25,9 @@ Created by Artan Sinani with FontForge 2.0 (http://fontforge.sf.net)
     unicode-range="U+F100-F101"
   />
     <missing-glyph />
-    <glyph glyph-name="uniF100" unicode="&#xf100;" 
-d="M512 152.778l-256 198.713l-256 -198.714v81.0186l256 198.713l256 -198.714v-81.0166zM448 160v-192h-128v128h-128v-128h-128v192l192 144z" />
     <glyph glyph-name="uniF101" unicode="&#xf101;" 
 d="M512 144v-16h-64v-160h-160v96h-64v-96h-160v160h-64v16l256 256l96 -96v80h64v-144z" />
+    <glyph glyph-name="uniF100" unicode="&#xf100;" 
+d="M512 152.778l-256 198.713l-256 -198.714v81.0186l256 198.713l256 -198.714v-81.0166zM448 160v-192h-128v128h-128v-128h-128v192l192 144z" />
   </font>
 </defs></svg>
