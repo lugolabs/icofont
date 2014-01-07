@@ -1,12 +1,14 @@
 # ![Icofont](http://lugolabs.com/static/icofont_logo.png)
 
-Provides a web interface to a large collection of free icon fonts, so that you can inlcude only the fonts you need in your application.
+Provides a web interface to over 450 free icon fonts, so that you can inlcude only the fonts you need in your application.
 
 ![Icofont front](http://lugolabs.com/static/icofont_front.png)
+
 
 ### Dependencies
 
 Icofont depends on the awsome [fontcustom]() for building the fonts. Please check their README for instructions on how to install it.
+
 
 ### Installation
 
@@ -22,6 +24,7 @@ and run
 bundle install
 ```
 
+
 ### Usage
 
 **1.** Start by running the `icofont` generator, which will copy the SVG glyphs from the [icofont-glyphs] repository into your machine, usually at `~/.icofont/glyphs`:
@@ -30,27 +33,26 @@ bundle install
 rails generate icofont
 ```
 
-**2.** Mount the `icofont` engine into your `routes.rb` file:
+The generator will also mount the `icofont` engine by injecting the following line into your `routes.rb` file:
 
 ```ruby
-if Rails.env.development?
-  mount Icofont::Engine => "/icofont"
-end
+mount_icofont
  ```
 
-**3.** Now you can access the web interface of icofont at `/icofont` URL (e.g. `http://localhost:3000/icofont`). There you can select/unselect the glyphs you wish to be included on your font. Click on UPDATE to persist your changes, and create the font.
+Now you can access the web interface of icofont at `/icofont` URL (e.g. `http://localhost:3000/icofont`). There you can select/unselect the glyphs you wish to be included on your font. Click on UPDATE to persist your changes, and create the font.
 
 The class names can be found below the fonts.
 
-**4.** Make your the `icofont.css.erb` is included in your `application.css` file:
+**2.** Include `icofont.css.erb` in your `application.css` file:
 
 ```css
 *= require icofont
 ```
 
-Once the font is created, the selected class names are ready to use, on your pages.
+Once the font is created, the selected class names are ready to use on your views.
 
-This way you will include the icons you need on your font.
+This way you will include _only_ the icons you need on your font.
+
 
 ### Licence
 

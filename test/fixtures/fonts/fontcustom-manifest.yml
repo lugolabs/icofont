@@ -12,23 +12,23 @@
   "glyphs": {
     "home": {
       "codepoint": 61696,
-      "source": "/var/folders/6m/t5fw0l811tl8ll9rbs7wvssm0000gn/T/d20140103-4928-1biv1n2/home.svg"
+      "source": "/var/folders/6m/t5fw0l811tl8ll9rbs7wvssm0000gn/T/d20140107-28573-155vrfl/home.svg"
     },
     "home2": {
       "codepoint": 61697,
-      "source": "/var/folders/6m/t5fw0l811tl8ll9rbs7wvssm0000gn/T/d20140103-4928-1biv1n2/home2.svg"
+      "source": "/var/folders/6m/t5fw0l811tl8ll9rbs7wvssm0000gn/T/d20140107-28573-155vrfl/home2.svg"
     }
   },
   "options": {
     "autowidth": false,
     "config": false,
-    "css_selector": "icofont-{{glyph}}",
+    "css_selector": ".icofont-{{glyph}}",
     "debug": false,
     "font_name": "icofont",
     "force": false,
     "input": {
       "templates": "/Users/arti/ror/icofont/icofont/lib/icofont/templates",
-      "vectors": "/var/folders/6m/t5fw0l811tl8ll9rbs7wvssm0000gn/T/d20140103-4928-1biv1n2"
+      "vectors": "/var/folders/6m/t5fw0l811tl8ll9rbs7wvssm0000gn/T/d20140107-28573-155vrfl"
     },
     "no_hash": true,
     "output": {

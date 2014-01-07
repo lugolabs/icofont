@@ -24,7 +24,7 @@ module Icofont
 			def glyphs_path
 				@@glyphs_path ||= expand_root(".#{FONT_NAME}/#{FONT_NAME}.txt")
 			end
-
+			
 			def svg_path
 				@@svg_path ||= File.join(svg_root, svg_folder)
 			end
