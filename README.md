@@ -12,7 +12,7 @@ Icofont depends on the awsome [fontcustom](http://fontcustom.com/) for building 
 
 ### Installation
 
-After installing fontcustom and its dependencies, add the gem to the Gemfile of your Rails app:
+After installing fontcustom's dependencies, add the gem to the Gemfile of your Rails app:
 
 ```ruby
 gem 'icofont'
