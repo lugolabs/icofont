@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.version     = Icofont::VERSION
   s.authors     = ["Artan Sinani"]
   s.email       = ["artisinani@gmail.com"]
-  s.homepage    = "https://github.com/lugolabs/icofont"
+  s.homepage    = "http://lugolabs.com/blog/2014/01/07/icofont-manage-your-web-icon-fonts-inside-rails"
   s.license     = "MIT"
   s.summary     = "Manage your icon fonts assets inside your application"
   s.description = "Provides a web interface to a large collection of free icon fonts, so that you can inlcude only the fonts you need in your application."
