@@ -16,8 +16,8 @@ class IcofontGenerator < Rails::Generators::Base
 		route 'mount_icofont'
 	end
 
-	def add_to_routes
-		route 'mount_icofont'
+	def add_glyphs
+		git add: Icofont::Paths.glyphs_path
 	end
 
 	desc 'Copies the SVG glyphs necessary to generate the icofonts'

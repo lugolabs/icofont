@@ -43,6 +43,8 @@ Now you can access the web interface of icofont at `/icofont` URL (e.g. `http://
 
 The class names can be found below the fonts.
 
+The names of the fonts used are saved in the `[rails_root]/.icofont/icofont.txt` file, which was generated and added to your git repository automatically by the generator.
+
 **2.** Include `icofont.css.erb` in your `application.css` file:
 
 ```css
