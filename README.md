@@ -7,7 +7,7 @@ Provides a web interface to over 450 free icon fonts, so that you can inlcude on
 
 ### Dependencies
 
-Icofont depends on the awsome [fontcustom](http://fontcustom.com/) for building the fonts. Please check their README for instructions on how to install it.
+Icofont depends on the awsome [fontcustom](https://github.com/FontCustom/fontcustom) for building the fonts. Please check their README for instructions on how to install it.
 
 
 ### Installation
