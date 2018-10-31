@@ -1,7 +1,13 @@
+### This gem is no longer maintained
+
+Please check [Iconly](https://github.com/lugolabs/iconly) for similar functionality.
+
+-----
+
+
 # Icofont
 
 Provides a web interface to over 450 free icon fonts, so that you can inlcude only the fonts you need in your application.
-
 
 ### Dependencies
 

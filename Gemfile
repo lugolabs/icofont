@@ -10,9 +10,4 @@ gemspec
 # Git. Remember to move these dependencies to your gemspec before releasing
 # your gem to rubygems.org.
 
-# To use debugger
-# gem 'debugger'
-# gem 'jquery-rails'
-# gem 'sqlite3'
-
-gem 'mocha', :group => :test, :require => false
+gem 'mocha', group: :test, require: false

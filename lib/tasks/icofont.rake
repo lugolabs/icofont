@@ -1,4 +1,4 @@
-require_dependency 'icofont/font_processor'
+require_relative '../icofont/font_processor'
 
 namespace :icofont do
 	desc "Update the icon fonts"
