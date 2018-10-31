@@ -2,8 +2,6 @@
 
 Provides a web interface to over 450 free icon fonts, so that you can inlcude only the fonts you need in your application.
 
-![Icofont front](http://lugolabs.com/static/icofont_front_cover.png)
-
 
 ### Dependencies
 
